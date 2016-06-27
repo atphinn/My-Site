@@ -47,7 +47,7 @@ button{
 #about{
 
 	border: solid white 2px;
-	width: 385px;
+	width: 330px;
 	height: 57px;
 	margin: 0 auto;
 	color: white;
@@ -60,24 +60,26 @@ button{
 #portfolio{
 
 	border: solid white 2px;
-	width: 385px;
+	width: 330px;
 	height: 57px;
-	margin: -78px 0px 0 138px;
+	margin: -81px 0px 0 138px;
 	color: white;
 	font-size: 37px;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
+	float: left;
+	line-height: 32px;
 		
 }
 
 #contact{
 
 	border: solid white 2px;
-	width: 385px;
+	width: 330px;
 	height: 57px;
-	margin: -78px 142px 0 0;
+	margin: -81px 142px 0 0;
 	float: right;
 	color: white;
 	font-size: 37px;
@@ -85,6 +87,7 @@ button{
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
+	line-height: 32px;
 }
 
 a:link{
