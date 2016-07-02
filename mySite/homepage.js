@@ -17,6 +17,6 @@ $(function () {
       $('#contact').click(function (event) {
         var email = 'atphinn@gmail.com';
         var subject = 'Test';
-        document.location = "mailto:"+email+"?subject="+subject;
+        document.location = "mailto:"+email;
       });
     });
