@@ -10,6 +10,12 @@ button{
 	font-weight: bold;
 	text-align: center;
 	padding: 255px 0 0 0;
+	-webkit-animation: rot 4s linear infinite;
+    animation: rot 4s linear infinite;
+}
+
+#welcome{
+	display: none;
 }
 
 #container{
@@ -25,7 +31,7 @@ button{
 			),
 	url("83.png");
 
-	min-width: 1000px;
+	min-width: 1500px;
 	clear: both;
 
 }
@@ -43,6 +49,7 @@ button{
 	width: 903px;
 	margin: 0 auto;
 	padding: 260px 0 75px 0;
+
 }
 
 
