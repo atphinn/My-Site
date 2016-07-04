@@ -16,10 +16,22 @@ $("button").click(function() {
 
 
 $("#about").click(function() {
+    $('.works').hide();
 		$('#bio').fadeIn(3000);
+   
 	}
 
 );
+
+$("#portfolio").click(function() {
+    $('#bio').hide();
+    $('.works').fadeIn(3000);
+  
+  }
+
+);
+
+
 
 $(function () {
       $('#contact').click(function (event) {
