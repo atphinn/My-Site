@@ -25,8 +25,8 @@ button{
 	display: none;
 	background: 
 		linear-gradient(
-			rgba(0, 0, 0, 0.75),
-			rgba(0, 0, 0, 0.75)
+			rgba(0, 0, 0, .85),
+			rgba(0, 0, 0, .85)
 			),
 	url("83.png");
 
@@ -34,6 +34,10 @@ button{
 	clear: both;
 	min-height: 1000px;
 
+}
+
+#logo{
+	margin: 0 0 0 600px;
 }
 
 #bio{
@@ -189,11 +193,20 @@ a:link{
 	}*/
 
 	
-	@media only screen and (max-width: 400px){
-				body{/*background-color: pink*/;max-width: 400px;}
-				#container{margin:auto 0;max-width:667px; max-height: 1000px;}
-				#bio{ max-width: 300px;font-size: 30px;}
-
+	@media only screen and (max-width: 768px){
+				body{max-width: 667px; }
+				#container{margin:auto 0;max-width:667px; max-height: 700px}
+				#logo{ margin: 0 auto;  }
+				#bio{  margin: 0 0 0 -250px; max-width: 300px; font-size: 14px}
+				.works{ margin-left: -500px;}
+				#mr1{margin: 200px 0 0 -250px;float: left;}
+				#mr2{margin: 225px 0 0 -48px;float: left;}
+				/*#mr3{display: none;}*/
+				p {display: none;}
+				#line{display: none;}
+				#about{width: 144px; height: 20px;font-size: 20px;line-height: 0; float: left;margin-left: 43px;margin-top: 100px;}
+				#portfolio{width: 144px; height: 20px;font-size: 20px;line-height: 0; margin-left: 17px; float: left; margin-top: 100px}
+				#contact{width: 144px; height: 20px;font-size: 20px;line-height: 0;margin-top: 33px; margin-right: 1250px;}
 				}
 
 
