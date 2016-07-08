@@ -6,12 +6,14 @@
 	<link rel="stylesheet" href="homepage.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
 </head>
 
 
 <body>
-<button>My name is Alex Phinn <h2 id="welcome">Welcome<h2></button>
+	<button>My name is Alex Phinn <h2 id="welcome">Welcome<h2></button>
 	<div id="container">
 		<div id="logo">
 			<img src="logo.png" style="width: 562px; margin-bottom: -413px;">
@@ -24,19 +26,19 @@
 				<a href="Dissh/Dishh2.html" target="_blank">
 					<img src="DishMR.png" class="w3" style="margin: 0 0 0 -607px;">
 				</a>
-					<p>	Mobile Responsive Site</p>
+				<p id="mobile">	Mobile Responsive Site</p>
 			</div>
-			<div class="works" id="mr1" >
+			<div class="works" >
 				<a href="NinjaRun/possible.html" target="_blank">
-					<img src="NinjaRun.png"  style="margin:-200px 200px 14px 400px;"> 
+					<img src="NinjaRun.png"  id="mr1" style="margin:-200px 200px 14px 400px;"> 
 				</a>
-					<p style="margin: -43px 0 0 400px;">My JavaScript game Press W to Jump</p>
+				<p id="ninja" style="margin: -43px 0 0 400px;">My JavaScript game Press W to Jump</p>
 			</div>
-			<div class="works" id="mr2">
+			<div class="works" >
 				<a href="https://github.com/atphinn/projects2/tree/master/Fit" target="_blank">
-					<img src="rubysite.png" style="margin: 0 0 0 -608px;">
+					<img src="rubysite.png" id="mr2" style="margin: 0 0 0 -608px;">
 				</a>
-				<p>Ruby site</p>
+				<p id="ruby">Ruby site</p>
 			</div>
 			<!-- <div class="works" id="mr3">
 				<img src="" class="w2" style="margin: -200px 200px 0 0;">
@@ -53,5 +55,6 @@
 
 	</div>
 	<script src="homepage.js"></script>
+	<!-- <script src="jquery-1.9.1.min.js"></script> -->
 </body>
 </html>

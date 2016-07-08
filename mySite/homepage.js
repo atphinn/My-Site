@@ -31,6 +31,14 @@ $("#portfolio").click(function() {
 
 );
 
+$("#logo").click(function() {
+    $('#bio').hide();
+    $('.works').hide();
+  
+  }
+
+);
+
 
 
 $(function () {

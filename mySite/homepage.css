@@ -192,21 +192,22 @@ a:link{
 	margin: 0 0 0 -300px;
 	}*/
 
-	
 	@media only screen and (max-width: 768px){
-				body{max-width: 667px; }
-				#container{margin:auto 0;max-width:667px; max-height: 700px}
-				#logo{ margin: 0 auto;  }
-				#bio{  margin: 0 0 0 -250px; max-width: 300px; font-size: 14px}
-				.works{ margin-left: -500px;}
-				#mr1{margin: 200px 0 0 -250px;float: left;}
-				#mr2{margin: 225px 0 0 -48px;float: left;}
-				/*#mr3{display: none;}*/
-				p {display: none;}
-				#line{display: none;}
-				#about{width: 144px; height: 20px;font-size: 20px;line-height: 0; float: left;margin-left: 43px;margin-top: 100px;}
-				#portfolio{width: 144px; height: 20px;font-size: 20px;line-height: 0; margin-left: 17px; float: left; margin-top: 100px}
-				#contact{width: 144px; height: 20px;font-size: 20px;line-height: 0;margin-top: 33px; margin-right: 1250px;}
+	                        html, body {overflow-x: hidden;}
+				body{position: relative;}
+				#container{max-width:300px;}
+				#text{margin: 0 0 0 12px; width: 377px; font-size: 10px;}
+				#logo{margin: 0 auto;}
+				#bio{margin: 0 0 0 13px;}
+				.w3{margin: -42px auto!important;}
+				#mr1{margin: 41px auto!important;}
+				#mr2{margin: -44px auto!important;}
+				p {display:none;}
+				#line{display:none;}
+				#about{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px}
+				#portfolio{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px;}
+				#contact{width:181px;height:20px;line-height:0;font-size:25px;margin: 44px 0 0 101px;float:none;}
+
 				}
 
 
