@@ -41,7 +41,7 @@ body{position: relative;}
 }
 
 #logo{
-	margin: 0 0 0 415px;
+	margin: 0 0 0 430px;
 }
 
 #bio{
@@ -230,7 +230,8 @@ a:link{
 	                        html, body {overflow-x: hidden;}
 				body{position: relative;max-width:768px;min-height:1000px}
 				#animation{}
-				#button{margin:0 0 0 -3480px;}
+				#welcome{margin:0 0 0 111px;}
+				#button{margin:-100px 0 0 -20px!important;}
 				#container{max-width:100%;min-height:1000px;}
 				#text{margin: 0 0 0px 21px; width: 300px; font-size: 10px;}
 				#logo{margin: 0 0 0 -48px;}
