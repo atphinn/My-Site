@@ -1,102 +1,128 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;font-family: "Trebuchet", helvetica, sans-serif ;}
 
-button{
-	background-color: white;
+ 
+body{position: relative;}	
+
+#button{
 	border: none;
-	margin: -116px auto;
-	width: 100vw;
-	height: 100vh;
+	margin: -116px 0 0 -302px ;
+	/*width: 100%;
+	height: 100%;*/
 	font-size: 37px;
 	font-weight: bold;
-	text-align: center;
+        /*text-align: center;*/
 	padding: 255px 0 0 0;
-	
+	position:absolute;
 }
 
 #welcome{
 	display: none;
+	margin-left: 77px;
 }
+
 
 #container{
-
-	height:100vh;
-	width: 100%;
-	/*background-color: black;*/
-	display: none;
-	background: 
-		linear-gradient(
-			rgba(0, 0, 0, .85),
-			rgba(0, 0, 0, .85)
-			),
-	url("83.png");
-
-	min-width: 1500px;
-	clear: both;
-	min-height: 1000px;
-
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: black;
+    display: none;
+    background: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85) ), url("83.png") no-repeat center center fixed;
+    background-size: cover;
 }
 
+
 #logo{
-	margin: 0 0 0 600px;
+	margin: 0 auto;
+	display: table;
+	padding-left:52px;
 }
 
 #bio{
-	display:none;	
+	display:none;
+	font-weight: 500;	
 }
 
 .works{
 	display:none;	
 }
 
+#mr1 {
+            float: left;
+            margin: -203px 0 0 351px;
+	
+	}
+	
+
+#mr2 {
+	float:right;
+	margin: -205px 39px 0 0;
+}
+
+
+#mobile{
+	margin: 78px 0 0 41px;
+	
+	}
+	
+#ruby{    
+        margin: -25px 0px 0 661px;
+        
+        }
+	
+	
 #text{
 
 	color: white;
 	font-family: "Trebuchet", helvetica, sans-serif ;
 	text-align: center;
-	width: 903px;
+	width: 1000px;
 	margin: 0 auto;
-	padding: 260px 0 21px 0;
+	padding: 186px 0 21px 0;
 
 }
 
 
 #line{
 
-	border-bottom: solid white 2px;
+	border-top: solid white 2px;
 	width: 903px;
 	margin:0 auto;
-	
+	padding-left: 20px;	
 }
 
 #about{
 
-	border: solid white 2px;
-	width: 330px;
-	height: 57px;
-	margin: 0 auto;
-	color: white;
-	font-size: 37px;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 20px;
-	line-height: 32px;
+    border: solid white 2px;
+    width: 286px;
+    height: 23px;
+    margin: 0 auto;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 0px;
+    /* text-align: center; */
+    position: initial;
+    display: inline-block;
 }
 
 #portfolio{
 
-	border: solid white 2px;
-	width: 330px;
-	height: 57px;
-	margin: -81px 0px 0 138px;
-	color: white;
-	font-size: 37px;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 20px;
-	position: relative;
-	float: left;
-	line-height: 32px;
-		
+    border: solid white 2px;
+    width: 286px;
+    height: 23px;
+    margin: 0 auto;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    line-height: 0px;
+    text-align: center;
+    position: inherit;
+    display: inline-block;
 }
 
 div img{
@@ -104,20 +130,22 @@ div img{
 }
 
 #contact{
-
-	border: solid white 2px;
-	width: 330px;
-	height: 57px;
-	margin: -81px 142px 0 0;
-	float: right;
-	color: white;
-	font-size: 37px;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 20px;
-	position: relative;
-	line-height: 32px;
+    border: solid white 2px;
+    width: 286px;
+    height: 23px;
+    margin: 0 auto;
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    line-height: 0px;
+    text-align: center;
+    display: inline-block;
+    position: inherit;
 }
+
 
 a:link{
   text-decoration: none!important;
@@ -194,21 +222,22 @@ a:link{
 
 	@media only screen and (max-width: 768px){
 	                        html, body {overflow-x: hidden;}
-				body{position: relative;}
-				#container{max-width:300px;}
-				#text{margin: 0 0 0 12px; width: 377px; font-size: 10px;}
-				#logo{margin: 0 auto;}
-				#bio{margin: 0 0 0 13px;}
+				body{position: relative;max-width:768px;min-height:1000px}
+				#animation{}
+				#welcome{margin:0 0 0 111px;}
+				#button{margin:-100px 0 0 -20px!important;}
+				#container{max-width:100%;min-height:1000px;}
+				#text{margin: -190px 0 83px 19px; width: 300px; font-size: 10px;}
+				#logo{margin: -90px 0 199px -130px;}
+				h1{margin-left:15px;}
+				#bio{margin: 0 0 0 48px;}
 				.w3{margin: -42px auto!important;}
 				#mr1{margin: 41px auto!important;}
 				#mr2{margin: -44px auto!important;}
 				p {display:none;}
-				#line{display:none;}
-				#about{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px}
-				#portfolio{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px;}
-				#contact{width:181px;height:20px;line-height:0;font-size:25px;margin: 44px 0 0 101px;float:none;}
+				#line{border-top:none;}
+				#about{width:181px;height:20px;line-height:0;font-size:25px;margin: 45px 0 0 67px;float: left;}
+				#portfolio{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 67px;float: left;clear: both;}
+				#contact{width:181px;height:20px;line-height:0;font-size:25px;float: left;margin: 43px 0 0 -185px;}
 
 				}
-
-
-

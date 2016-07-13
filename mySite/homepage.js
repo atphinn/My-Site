@@ -1,14 +1,18 @@
+
 $(document).ready(function(){
-  $('button')
-    .animate({ marginLeft: '600px'},3000)
-    .animate({ marginTop: '-300px', marginLeft: "0"},3000)
-    .animate({ marginTop: "-100",},3000);
-    $("#welcome").fadeIn(9000).delay(10000);
+   
+     $("#button")
+        .animate({marginLeft: '600px'},3000)
+        .animate({ marginTop: '-300px', marginLeft: "500px"},2000)
+        .animate({ marginTop: '-100',},2000)
+        .animate({fontSize: '3em'}, "slow")
+        $("#welcome").fadeIn(9000).delay(10000);
 });
 
-$("button").click(function() {
+
+$("#button").click(function() {
 	$('#container').fadeIn(4000);
-	$('button').hide()
+	$('#button').hide()
 
 	// body...
 });
@@ -44,7 +48,7 @@ $("#logo").click(function() {
 $(function () {
       $('#contact').click(function (event) {
         var email = 'atphinn@gmail.com';
-        var subject = 'Test';
+        //var subject = 'Test';
         document.location = "mailto:"+email;
       });
     });
