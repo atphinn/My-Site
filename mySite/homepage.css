@@ -1,26 +1,30 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;font-family: "Trebuchet", helvetica, sans-serif ;}
 
-button{
-	background-color: white;
+ 
+body{position: relative;}	
+
+#button{
 	border: none;
-	margin: -116px auto;
-	width: 100vw;
-	height: 100vh;
+	margin: -116px 0 0 -302px ;
+	/*width: 100%;
+	height: 100%;*/
 	font-size: 37px;
 	font-weight: bold;
-	text-align: center;
+        /*text-align: center;*/
 	padding: 255px 0 0 0;
-	
+	position:absolute;
 }
 
 #welcome{
 	display: none;
+	margin-left: 77px;
 }
 
-#container{
 
+#container{
+        margin:0 auto;
 	height:100vh;
-	width: 100%;
+	width: 100vw;
 	/*background-color: black;*/
 	display: none;
 	background: 
@@ -30,24 +34,49 @@ button{
 			),
 	url("83.png");
 
-	min-width: 1500px;
+	max-width: 1500px;
 	clear: both;
-	min-height: 1000px;
-
+	/*min-height: 1000px;*/
+        position: relative;
 }
 
 #logo{
-	margin: 0 0 0 600px;
+	margin: 0 0 0 415px;
 }
 
 #bio{
-	display:none;	
+	display:none;
+	font-weight: 500;	
 }
 
 .works{
 	display:none;	
 }
 
+#mr1 {
+            float: left;
+            margin: -203px 0 0 300px;
+	
+	}
+	
+
+#mr2 {
+	float:right;
+	margin: -205px 0 0 -608px;
+}
+
+
+#mobile{
+	margin: 79px 0 0 0;
+	
+	}
+	
+#ruby{    
+        margin: -25px 0px 0 600px;
+        
+        }
+	
+	
 #text{
 
 	color: white;
@@ -71,32 +100,35 @@ button{
 #about{
 
 	border: solid white 2px;
-	width: 330px;
-	height: 57px;
+	width: 286px;
+	height: 23px;
 	margin: 0 auto;
 	color: white;
-	font-size: 37px;
+	font-size: 29px;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
-	line-height: 32px;
+	line-height: 0px;
+	text-align: center;
+	position: relative;
 }
 
 #portfolio{
 
 	border: solid white 2px;
-	width: 330px;
-	height: 57px;
-	margin: -81px 0px 0 138px;
+	width: 286px;
+	height: 23px;
+	margin: -47px 0px 0 232px;
 	color: white;
-	font-size: 37px;
+	font-size: 29px;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
 	float: left;
-	line-height: 32px;
-		
+	line-height: 0px;
+	text-align: center;
+	position: relative
 }
 
 div img{
@@ -106,17 +138,19 @@ div img{
 #contact{
 
 	border: solid white 2px;
-	width: 330px;
-	height: 57px;
-	margin: -81px 142px 0 0;
+	width: 286px;
+	height: 23px;
+	margin: -47px 232px 0 0;
 	float: right;
 	color: white;
-	font-size: 37px;
+	font-size: 29px;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
-	line-height: 32px;
+	line-height: 0px;
+	text-align: center;
+	position: relative
 }
 
 a:link{
@@ -194,21 +228,21 @@ a:link{
 
 	@media only screen and (max-width: 768px){
 	                        html, body {overflow-x: hidden;}
-				body{position: relative;}
-				#container{max-width:300px;}
-				#text{margin: 0 0 0 12px; width: 377px; font-size: 10px;}
-				#logo{margin: 0 auto;}
-				#bio{margin: 0 0 0 13px;}
+				body{position: relative;max-width:768px;min-height:1000px}
+				#animation{}
+				#button{margin:0 0 0 -3480px;}
+				#container{max-width:100%;min-height:1000px;}
+				#text{margin: 0 0 0px 21px; width: 300px; font-size: 10px;}
+				#logo{margin: 0 0 0 -48px;}
+				h1{margin-left:54px;}
+				#bio{margin: 0 0 0 48px;}
 				.w3{margin: -42px auto!important;}
 				#mr1{margin: 41px auto!important;}
 				#mr2{margin: -44px auto!important;}
 				p {display:none;}
 				#line{display:none;}
-				#about{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px}
-				#portfolio{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 101px;}
-				#contact{width:181px;height:20px;line-height:0;font-size:25px;margin: 44px 0 0 101px;float:none;}
+				#about{width:181px;height:20px;line-height:0;font-size:25px;margin: 45px 0 0 114px;float: left;}
+				#portfolio{width:181px;height:20px;line-height:0;font-size:25px;margin: 0 0 0 114px;float: left;clear: both;}
+				#contact{width:181px;height:20px;line-height:0;font-size:25px;float: left;margin: 43px 0 0 -185px;}
 
 				}
-
-
-
