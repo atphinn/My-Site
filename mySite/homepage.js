@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
    
      $("#button")
@@ -11,19 +10,19 @@ $(document).ready(function(){
 
 
 $("#button").click(function() {
-	$('#container').fadeIn(4000);
-	$('#button').hide()
+  $('#container').fadeIn(4000);
+  $('#button').hide()
 
-	// body...
+  // body...
 });
 
 
 
 $("#about").click(function() {
     $('.works').hide();
-		$('#bio').fadeIn(3000);
+    $('#bio').fadeIn(3000);
    
-	}
+  }
 
 );
 
