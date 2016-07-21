@@ -1,263 +1,327 @@
 <!DOCTYPE html>
 
-<html>
-	<head>
-		<title></title>
-		<style>
-		
-                 *{padding: 0; margin: 0;}
+    <html>
 
+        <head>
+            <title></title>
+            <style>
+                /* Reset */
 
-                 body{
-			font-family: 'Montserrat', sans-serif;
-		}
+                * {
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                /* General */
 
-		.nav{
-			margin: auto 0;
-			background-color: #080707;
-			position: fixed;
-			height: 48px;
-			width: 100%;
-			right: 0;
-			left: 0;
-			top: 0;
-			border-bottom: solid #f3c8ba;
-			-webkit-box-shadow: 1px 1px 1px 1px #d9d9d9;
-			box-shadow: 1px 1px 1px 1px #d9d9d9;
-			z-index: 999;
+                body {
+                    font-family: 'Montserrat', sans-serif;
+                    position: relative;
+                    margin: 0;
+                }
 
-		}
-		#mw1{
-			  
-                        height: 41px;
-                        margin: 0 auto;
-                        display: block;
-                        padding: 3px 840px 0 0;
-    
-		}
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
 
-		#toplinks{ 
+                img {
+                    width: 100%;
+                }
 
-			position:fixed; 
-			padding-left: 160px; 
-			z-index: 999;
-                        top:1%;
-		}
+                ul,
+                li {
+                    border-right: 1px solid rgba(255, 255, 255, 0.2);
+                    display: inline;
+                    line-height: 3;
+                    margin: 0;
+                    padding: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
 
+                li:hover,
+                li a:hover {
+                    background-color: pink;
+                    color: black;
+                }
 
-		li {
-				display: inline;
-				position: relative;
-				float: left;
-				border-right:1px solid rgba(255, 255, 255, 0.2);
-				margin:auto 0;
-				text-transform: uppercase;
-    			font-weight: bold;
-    			margin-top: 7px;
-    			font-size: 13px;
-    			
+                h1 {
+                    margin-top: -130px
+                }
 
-			}
+                a .link {
+                    padding-bottom: 9px;
+                }
+                /* Layout */
 
-        	a:link{
-       			text-decoration: none;
-       			color: white;
-       		}
+                .nav {
+                    padding: 0 83px;
+                }
 
-		 	li a:hover{
-        		background-color:pink;
-        		color: black
-        	}
+                #logo {
+                    margin: 0 auto;
+                }
 
-       		li a{
-       			padding: 14px;
-       		}
-        		
-		#container{
-			margin: 0 auto;
-			/*background-color: red;*/
-			width: 1000px;
-			height: 100%;
-                        padding-top: 70px;
-			}
+                #container {
+                    margin: 0 auto;
+                    padding: 43px 83px;
+                }
 
-		#pic1{
-			/*background-color: green;*/
-			margin: auto 0;
-			width: 100%;
-			height: 514px;
+                #pic1 {
+                    padding: 20px 0;
+                }
 
-		}
+                .article {
+                 padding: 20px 283px 0 0;
+                }
 
-		#header1{
-			
-    	                background-color: rgba(0, 0, 0, 0.6);
-                        color: white;
-                        font-size: 35px;
-                        font-weight: bolder;
-                        height: 81px;
-                        margin: -80px auto;
-                        position: relative;
-                        text-transform: uppercase;
+                .author {
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+                }
+
+                .ad {
+                    margin-top: 7px;
+                }
+
+                @media only screen and (min-width: 768px) {
+                     /* Reset */
+
+                    .nav {
+                        background-color: black;
+                        border-bottom: solid #f3c8ba;
+                        -webkit-box-shadow: 1px 1px 1px 1px #d9d9d9;
+                        box-shadow: 1px 1px 1px 1px #d9d9d9;
+                        font-weight: bold;
+                        height: 48px;
+                        position: fixed;
                         width: 100%;
-                        z-index: 600;
-		}
+                        z-index: 5;
+                    }
+
+                    #logo,
+                    #logo img {
+                        float: left;
+                        height: 41px;
+                        width: 156px;
+                    }
+
+                    /* Layout */
+
+                    #container {
+                        position: absolute;
+                    }
+
+                    #pic1 {
+                        border-bottom: solid 1px rgb(0, 0, 0);
+                    }
+
+                    .article {
+                        border-bottom: solid 1px rgb(0, 0, 0);
+                    }
+                     
+                     
+                    h1 {
+                        background-color: rgba(0, 0, 0, 0.6);
+                        color: white;
+                        font-size: 42px;
+                        height: 93px;
+                        position: absolute;
+                        text-transform: uppercase;
+                        width: 1183px;
+                        z-index: 3;
+                    }
+
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 23px;
+                    }
+
+                    a .link {
+                        color: black;
+                        font-size: x-small;
+                    }
+
+                    .author {
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                    }
+
+                    .ad {
+                        background-color: red;
+                        float: right;
+                        height: 500px;
+                        width: 257px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+
+                }
+
+                /*Mobile*/
+                @media only screen and (max-width: 768px) {
+
+                    /* Layout */
+                    .nav {
+                        background-color: black;
+                        border-bottom: solid #f3c8ba;
+                        -webkit-box-shadow: 1px 1px 1px 1px #d9d9d9;
+                        box-shadow: 1px 1px 1px 1px #d9d9d9;
+                        font-weight: bold;
+                        height: 48px;
+                        position: fixed;
+                        width: 100%;
+                        z-index: 5;
+                    }
+
+                    #container {
+                        min-height: 100vh;
+                        padding: 50px 20px;
+                    }
+
+                    #logo,
+                    #logo img {
+                        float: left;
+                        height: 47px;
+                        width: 208px;
+                        padding-left:21px;
+                    }
+
+                    ul{
+                        display:none;
+                    }
+
+                    .article {
+                        border-bottom: solid 1px rgb(0, 0, 0);
+                        padding: initial;
+                    }
 
 
-		.rule{
-			border-bottom: solid 1px rgb(0, 0, 0);
-			width: 100%;
-			margin-top: 40px;
-		}
+                    #pic1 {
+                        border-bottom: solid 1px rgb(0, 0, 0);
+                    }
 
-		.article{
-			/*background-color: yellow;*/
-			width: 68%;
-			height: 442px;
-			text-transform: uppercase;
-			font-weight: bolder;
-			font-size: larger;
-			margin-top: 142px;
-			padding-bottom: 23px;
-		}
+                    h1 {
+                        background-color: rgba(0, 0, 0, 0.6);
+                        color: white;
+                        font-size: 23px;
+                        height: 77px;
+                        position: absolute;
+                        text-transform: uppercase;
+                        width: 371px;
+                        z-index: 3;
+                        margin-top: -83px!important;
+                    }
 
-		.link{
-			color: black;
-			font-size: xx-small;
-		}
-		
-		.author{
-			font-size: 9.5px;
-    		text-transform: uppercase;
-   			font-weight: normal;
-   			margin-top: 8px;
-		}
+                    h2 {
+                        font-size: 23px;
+                        text-transform: uppercase;
 
-		.ad{
-			background-color: blue;
-			height: 442px;
-			width: 30%;
-			float: right;
-    		        margin-top: -465px;
-    		        text-align: center;
-                        font-weight: bolder;
-                        font-size: -webkit-xxx-large;
-		}	
+                    }
 
-		.text{
-			font-weight: normal;
-			font-size: 12px;
-			text-transform: none;
-		}
+                    a .link {
+                        color: black;
+                        font-size: x-small;
+                    }
 
-		#ar2{
+                    .ad {
+                        background-color: red;
+                        font-weight: bold;
+                        height: 50px;
+                        margin: 7px auto;
+                        text-align: center;
+                        width: 340px;
+                    }
 
-			margin-top: 84px;
+                }
+            </style>
+            <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </head>
 
-		}
+        <body>
 
+            <div class="nav">
+                <img src="logo.png" id="logo">
+                <div>
+                    <ul>
+                        <li><a href="http://www.google.com/">Drooling</a></li>
+                        <li><a href="http://www.google.com/">Need This</a></li>
+                        <li><a href="http://www.google.com/">Star Struck</a></li>
+                        <li><a href="http://www.google.com/">Dont Judge</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="container">
+                <div id="pic1">
+                    <a href="http://www.google.com/"><img src="pic1.jpg" title="Kendall - image link to dummy page"></a>
+                    <h1>Kendall flaunts her hoodie while hiking in Malibu!</h1>
+                </div>
+                <div class="ad">AD</div>
+                <div class="article">
+                    <h2>AWW! Beyonce's Anniversary Present to Jay Z is Beyond Adorable!</h2>
+                    <br>
+                    <a href="www.google.com">
+                        <p class="link">NEED THIS</p>
+                    </a>
+                    <p class="author">by Alain Goldman Apr, 05th 3pm</p>
+                    <a href="www.google.com">
+                        <img src="beyonce.jpg">
+                    </a>
+                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue
+                        semper porta. Mauris massa. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+                        <a href="www.google.com">
+                            <p class="link"><b>More</b></p>
+                    </a>
+                    </p>
+                </div>
 
-		@media only screen and (max-width: 768px){
-		                /*html, body {overflow-x: hidden;}
-				.nav{min-height: 48px}*/
-				body{/*background-color: pink;/*max-width: 667px;*/;position: relative;}
-				#container{margin:-81px auto;max-width:480px}
-<<<<<<< HEAD
-				#mw1{margin: 0 auto; padding-left: 131px;}
-=======
-				#logo{margin: -68px auto; padding-left: 125px;}
-				#mw1{ margin: 0 0 0 -21px}
->>>>>>> 85f03d91ecbfb1d8079e7b9e2b465c5fce0dc94d
-				#toplinks{display: none;}
-				#pic1{max-width: 361px; max-height: 185px; margin: 79px auto;}
-				#header1{max-width: 361px;font-size: 22.5px;margin:-152px auto; height: 73px;}
-				.rule{ margin-top: 28px;min-width: 100%;}
-				.article{margin:190px auto;max-width: 361px; font-size: 30px;}
-				.link{padding-bottom: 20px;}
-				a{margin-top: 20px;}
-				#pic2{margin-top: 89px;}
-				#r2{padding-top: 40px;}
-				.ad{margin: -157px 0 0 84px; width: 320px;height: 50px;float: left; position: absolute;}
-				#a2{margin-top: -78px;}
-                                #ar2{margin-top: -81px;}
+                <div class="ad">AD</div>
 
-				}
+                <div class="article">
+                    <h3>Chris Brown Couldn't Resist Commenting This on Karrueche's Instagram!</h3>
+                    <br>
+                    <a href="www.google.com">
+                     <p class="link">NEED THIS</p>
+                    </a>
+                    <p class="author">by Alain Goldman Apr, 05th 3pm</p>
+                    <a href="www.google.com">
+                        <img src="chris.jpg">
+                    </a>
 
-		</style>
-		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
-                <meta name="apple-mobile-web-app-capable" content="yes" />
-	</head>
-		<body>
-			<div class ="nav">
-			<img src="logo.png" id="mw1">
-			</div>
-			<div id="container">
-				
-				<div id="toplinks">
-					<ul>
-						<li><a href="http://www.google.com/">Drooling</a></li>
-						<li><a href="http://www.google.com/">Need This</a></li> 
-						<li><a href="http://www.google.com/">Star Struck</a></li>
-						<li><a href="http://www.google.com/">Dont Judge</a></li> 
-					</ul>
-				</div> 
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue
+                    semper porta. Mauris massa. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+                        <a href="www.google.com">
+                            <p class="link"><b>More</b></p>
+                        </a>
+                    </p>
+                </div>
 
-				<div id="pic1">
-					<a href="http://www.google.com/"><img src="pic1.jpg" style="width:100%; height:100%"></a>
-				</div>
-				<div id="header1">
-					<p>Kendall flaunts her hoodie while hiking in Malibu!</p>
-                                            <div class="rule"></div>
-				</div>
+                <div class="ad">AD</div>
 
-				
+                <div class="article">   
+                    <h3>Madonna Couldn't Resist Commenting This on Karrueche's Instagram!</h3>
+                    <br>
+                    <a href="www.google.com">
+                        <p class="link">NEED THIS</p>
+                    </a>
+                    <p class="author">by Alain Goldman Apr, 05th 3pm</p>
+                    <a href="www.google.com">
+                        <img src="madonna.jpg">
+                    </a>
 
-				<div class="article">
-					AWW! Beyonce's Anniversary Present to Jay Z is Beyond Adorable!
-					<br>
-					<a href="www.google.com"><span class="link">NEED THIS</span></a>
-				<p class="author">by Alain Goldman Apr, 05th 3pm</p>
-					<a href="www.google.com">
-					<img src="beyonce.jpg" style="width:100%">	
-					</a>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
-					Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.<a href="www.google.com"><span class="link"><b>More</b></span></a></p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+                    porta. Mauris massa. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+                        <a href="www.google.com">
+                            <p class="link"><b>More</b></p>
+                        </a>
+                    </p>
+                </div>          
+            </div>
 
-					<div class="rule"></div>
+        </body>
 
-				</div>
-				
-				<div class="ad">AD</div>
-				<!-- <div class="rule"></div> -->
-
-				<div class="article" id="ar2">
-					Chris Brown Couldn't Resist Commenting This on Karrueche's Instagram!
-					<br>
-					<a href="www.google.com"><span class="link">NEED THIS</span></a>
-				<p class="author">by Alain Goldman Apr, 05th 3pm</p>
-					<a href="www.google.com">
-					<img src="chris.jpg" style="width: 100%;">
-					</a>
-
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
-					Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.<a href="www.google.com"><span class="link"><b>More</b></span></a></p>
-
-					<div class="rule" id="r2"></div>
-				</div>
-
-				<div class="ad" id="a2">AD</div>
-
-				<!-- <div class="rule" id="r2"></div> -->
-				<!-- Chris Brown Couldn't Resist Commenting This on Karrueche's Instagram!
-					<br>
-					<a href="www.google.com"><span class="link">NEED THIS</span></a>
-				<p class="author">by Alain Goldman Apr, 05th 3pm</p> -->
-				<div class="article" id="ar2">
-					<img src="madonna.jpg" style="width: 100%;" id="pic2">
-				</div>
-
-			
-			</div>
-
-		</body>
 </html>
