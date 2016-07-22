@@ -1,4 +1,3 @@
-
 $('#bio').hide();
 $('.works').hide();
 
@@ -29,11 +28,3 @@ $("#logo").click(function() {
 
 
 
-// $(function () {
-//       $('#contact').click(function (e, event) {
-//         e.preventDefault();
-//         var email = 'atphinn@gmail.com';
-//         //var subject = 'Test';
-//         document.location = "mailto:"+email;
-//       });
-//     });
