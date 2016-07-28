@@ -1,0 +1,3 @@
+rootProject.name = 'MartialArt'
+
+include ':app'
