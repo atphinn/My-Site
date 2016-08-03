@@ -52,7 +52,7 @@ main {
 }
 
 .content{
-	width: 900px;
+	width: 765px;
    
 }
 
@@ -66,22 +66,27 @@ h2{
 
 
 .content ul, .content ul li {
-    padding: 0 32px;
+    padding: 0 27px;
     display: flex;
     justify-content: space-between;
 }
 
 #socialmedia{
-	    padding-left: 130px;
+    padding: 0 12px;
+    margin-left: 31px;
 }
 
 #socialmedia ul, #socialmedia li{
+	height: 33px;
 	display: flex;
     justify-content: space-between;
     margin-top: 22px;
 
 }
 
+.portfolio ul li img{
+
+}
 
 @media only screen and (min-width: 768px){
 	/* General */
