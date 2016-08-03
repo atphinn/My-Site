@@ -39,14 +39,48 @@ nav ul li{
 }
 
 nav{
-	margin-top: 80px;
-	padding: 20px 50px;
+	
+    padding: 20px 94px;
 }
 
-main{
-	float: right;
+main {
+
+    float: left;
+    margin: -141px 300px;
+    width: 100vh;
+    
 }
 
+.content{
+	width: 900px;
+   
+}
+
+h2{
+	padding: 15px 0;
+}
+
+.content p{
+	padding-bottom: 20px;
+}
+
+
+.content ul, .content ul li {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#socialmedia{
+	    padding-left: 130px;
+}
+
+#socialmedia ul, #socialmedia li{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+
+}
 
 
 @media only screen and (min-width: 768px){
