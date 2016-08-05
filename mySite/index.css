@@ -37,7 +37,7 @@ nav ul li{
 
 nav{
 	
-    padding: 20px 94px;
+    padding: 0px 90px;
 }
 
 main {
@@ -65,7 +65,7 @@ h2{
 }
 
 #socialmedia ul, #socialmedia li{
-	margin-top: 100px;
+	margin-top: 20px;
 
 }
 
@@ -116,7 +116,9 @@ h2{
 	}
 
 	.content{
-		width: 765px;
+	width: 740px;
+    margin: 20px 0;
+}
 	
 	}
 
@@ -157,30 +159,51 @@ body{
 	min-height: 100vh;
 	position: relative;
 	max-width: 767px;
+	text-align: center;
 	}
 
 	header{
-	padding: 0px 50px;
+	padding: 0px;
+    text-align: center;
+    
 	}
 
-	nav{
-		    padding: 95px 80px;
-	}
+nav ul{
+
+}
 
 nav ul li{
-		display: inline-block;
-    /* font-size: 40px; */
+	
     font-weight: bolder;
-    /* list-style-type: none; */
-    /* align-items: inherit; */
-    padding: 0px 56px;
-    /* float: left; */
-    margin-left: -82px;
-		
+    padding: 15px 15px;
 	}
 
 
-#contact{
-		float: right;
+	main{
+	float: left;
+    margin: 0 auto;
+    text-align: center;
+   
+   	}
+
+	
+
+	li{
+	list-style-type: none;
+	}
+
+	#socialmedia ul li{
+		margin: -150px auto;
+    	padding: 76px;
+	}
+
+.projects ul li img{
+    width: 100%;
+    padding: 12px 0;
+
+}
+	.projects ul:nth-child(2) {  
+	margin: 0 auto;
+    padding: 0;
 	}
 }
