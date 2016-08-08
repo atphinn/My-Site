@@ -24,8 +24,8 @@ a{
 	text-decoration: none;
 }
 
-a:hover,
-a:focus{
+nav a:hover,
+nav a:focus{
 	background-color: white;
 	color: black;
 	text-decoration: none;
@@ -60,12 +60,19 @@ h2{
 	}
 
 #socialmedia{
-    padding: 0 12px;
-    margin-left: 31px;
+    padding: 36px;
+    
 }
 
 #socialmedia ul, #socialmedia li{
 	margin-top: 20px;
+
+}
+
+
+#socialmedia img{
+	width: 50px;
+	padding-left: 60px;
 
 }
 
@@ -83,6 +90,10 @@ h2{
 
 .projects ul:nth-child(2) {  
   margin: -210px -170px 0 0;
+}
+
+footer{
+	text-align: center;
 }
 
 @media only screen and (min-width: 768px){
@@ -130,14 +141,10 @@ h2{
 	#socialmedia ul, #socialmedia li{
 		height: 25px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
-button{
-	width: 160px;
-	height: 25px;
-	/*background-color: rgb(128, 128, 0);*/
-	borde: ;
+ 
 }
 	.projects ul li img{
 		width: 100%;
@@ -153,6 +160,8 @@ button{
 	.projects ul:nth-child(2) {  
 	float: right;
 	}
+
+
 }
 
 /*Mobile*/
@@ -221,5 +230,7 @@ nav ul li{
 #socialmedia{
 	margin-left: 0px;	
 	}
+
+
 
 }
