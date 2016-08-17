@@ -2,8 +2,10 @@
   <head>
      <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+      *{padding: 0; margin:0;}
         html body {
         background: #888;
+        margin: 0;
         }
 
         .white-text{
@@ -106,11 +108,43 @@ ul li{
   padding: 13px 41px 0 0;
 }
 
-input{
+input,textarea{
     background: #eee;
-    border-bottom: 2px solid grey;
-    border: none;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-bottom: 1px solid grey;
+    font-size: 25px;
+    width: 400px;
+    height: 110px;
+
 }
+
+#submit{
+height: 46px;
+width: 100px;
+font-size: 20px; 
+color: #888; 
+}
+
+.c1{
+    font-size: 23px;
+    margin-top: -486px;
+    margin-right: 90px;
+    width: 500px;
+    float: right;
+    color: #888; 
+}
+
+footer{
+    color: #fff;
+    background-color: #aaa;
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    margin: -151px;
+        padding: 50px;
+    }
+
 }
     </style>
     <!-- BootStrap -->
@@ -160,19 +194,24 @@ input{
           </div>  
           <div id="form" class="grid">
             <label for="message"></label>
-          <input type="text" placeholder="Message" required>
           <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
           </div>
           </br>
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
           </form>
-        <p class="text-right">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
-I promise to reply A.S.A.P.</p>
-        <p class="text-right">Note: No spam/soliciting pour moi, merci :)</p>
+        <p class="text-left c1">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+        <br>
+        <br>
+        I promise to reply A.S.A.P.
+         <br>
+        <br>
+         <br>
+        <br>
+        Note: No spam/soliciting pour moi, merci :)</p>
       </div>
     </main>
     <footer>
-      <div id="thispage" class="container">
+      <div id="thispage">
         <h3>ABOUT THIS PAGE</h3>
         <p>Made with Bootstrap 
           by Alex P</p>
@@ -184,6 +223,7 @@ I promise to reply A.S.A.P.</p>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
       </ul>
+      </div>
       <div id="bottompage">qlip © 2016. All Rights Reversed</div>
     </footer>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
