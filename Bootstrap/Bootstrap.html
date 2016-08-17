@@ -1,0 +1,195 @@
+<html>
+  <head>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html body {
+        background: #888;
+        }
+
+        .white-text{
+        color: white;
+        }
+
+        nav{
+        background-color: #722872!important;
+
+        height: 60px;
+        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px 0 0 207px;  
+        border-color: #592059;
+
+        }
+
+        #navigation{
+        padding-left: 400px; 
+        }
+
+
+
+        .btn{
+        border-radius:0;
+        background-color: #722872;
+        text-transform: uppercase;    
+        font-weight: bold;
+        font-size: 16px;
+
+        }
+
+        .btn:hover{
+        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        color: #333;
+        background-color: transparant;
+        }
+
+        .btn:focus{
+        background-color: #bbb;
+        text-decoration: none;
+        }
+
+        .profile-img{
+          border-radius: 50%;
+          width: 250px;
+          float: right;
+        }
+
+
+header .container{
+    background: #aaa;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        header{
+    background: #aaa;
+    margin: 20px 190px;
+    padding: 90px 50px;
+     height: 415px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+      
+header p {
+     color: white;
+    font-size: 19px;
+    width: 730px;
+}
+
+#portfolio .container,
+#contact .container{
+    background: #eee;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: -20px;
+    clear: both;
+        }
+
+        h2{
+              color: #888;
+    font-weight: bold;
+    text-transform: uppercase;
+        }
+
+ul li{
+      list-style: none;
+      /*width: 420px;*/
+}
+
+
+#portfolio, #contact{
+    padding-top: 46px;
+    background: #eee;
+    margin-top: -21px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 800px;
+}
+
+#portfolio ul li{
+  padding: 13px 41px 0 0;
+}
+
+input{
+    background: #eee;
+    border-bottom: 2px solid grey;
+    border: none;
+}
+}
+    </style>
+    <!-- BootStrap -->
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="container-fluid">
+    <nav class="row navbar navbar-default navbar-fixed-top">
+      <img src="http://www.atphinn.com/logo2.png" class="col-xs-2">
+      <div id="navigation" class="col-md-8">
+      <button class="btn btn-md">About</button>
+     <button class="btn btn-md">Portfolio</button>
+      <button class="btn btn-md">Contact</button>
+      </div>
+    </nav>
+    <header class="container">
+      <div class="headercontainer">
+         <img src="http://qlip.in/avatar.png" class="img-responsive profile-img"> 
+      <p class="text-center white-text">The name is Alex and I'm an UX/UI designeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
+      <p class="text-center white-text">Web Developer - Graphic Artist - User Experience Designer</p>      
+      </div>
+    </header>
+     <main >
+      <div id="portfolio" class="container">
+        <h2 class="text-center">Portfolio</h2>
+        <ul class="row">
+          <li><a href="#"><img src="DishMR.png" class="img-responsive col-sm-6"></a></li>
+          <li><a href="#"><img src="NinjaRun.png" class="img-responsive col-sm-6"></a></li>
+          <li><a href="#"><img src="rubysite.png" class="img-responsive col-sm-6"></a></li>
+          <li><a href="#"><img src="website.png" class="img-responsive col-sm-6" style="margin-top: 20px;"></a></li>
+        </ul>
+      </div>
+      <div id="contact" class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <div id="form" >
+          <label for="name"></label>
+          <input type="text" placeholder="Name">
+        </div>
+        <form id="contactform">
+        <div id="form" >
+          <label for="email"></label>
+          <input type="text" placeholder="Email Address">
+        </div>    
+          <div id="form">
+             <label for="phone"></label>
+          <input type="text" placeholder="Phone Number">
+          </div>  
+          <div id="form" class="grid">
+            <label for="message"></label>
+          <input type="text" placeholder="Message" required>
+          <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+          </div>
+          </br>
+          <button type="submit">Submit</button>
+          </form>
+        <p class="text-right">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+I promise to reply A.S.A.P.</p>
+        <p class="text-right">Note: No spam/soliciting pour moi, merci :)</p>
+      </div>
+    </main>
+    <footer>
+      <div id="thispage" class="container">
+        <h3>ABOUT THIS PAGE</h3>
+        <p>Made with Bootstrap 
+          by Alex P</p>
+      </div>
+      <h3>Around the Web</h3>
+      <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+      <div id="bottompage">qlip © 2016. All Rights Reversed</div>
+    </footer>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+  </body>
+</html>
