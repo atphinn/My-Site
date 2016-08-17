@@ -1,6 +1,7 @@
 <html>
   <head>
      <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <style>
       *{padding: 0; margin:0;}
         html body {
@@ -56,7 +57,7 @@
 
 
 header .container{
-    background: #aaa;
+ 
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
         }
 
@@ -137,13 +138,40 @@ color: #888;
 }
 
 footer{
-    color: #fff;
+        color: #fff;
     background-color: #aaa;
     text-align: center;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     margin: -151px;
-        padding: 50px;
+    padding-top: 19px
     }
+
+    #thispage{
+      margin-left:-800px;
+      margin-top: -17px;
+      margin-bottom: 2px;
+    }
+
+    #social{
+    float: right;
+    margin: -86px 437px 0 0;
+    text-transform: uppercase
+    }
+
+#social ul li{
+    padding: 0 10px;
+    display: inline;
+}
+
+#bottompage{
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 25px 0;
+    background-color: #722872;
+    text-align: center;
+    bottom: 0;
+    position: static;
+    margin-top: 82px;
+}
 
 }
     </style>
@@ -162,7 +190,7 @@ footer{
     </nav>
     <header class="container">
       <div class="headercontainer">
-         <img src="http://qlip.in/avatar.png" class="img-responsive profile-img"> 
+         <img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/3/000/0d4/1b8/27dd617.jpg" class="img-responsive profile-img"> 
       <p class="text-center white-text">The name is Alex and I'm an UX/UI designeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
       <p class="text-center white-text">Web Developer - Graphic Artist - User Experience Designer</p>      
       </div>
@@ -216,12 +244,12 @@ footer{
         <p>Made with Bootstrap 
           by Alex P</p>
       </div>
+      <div id="social">
       <h3>Around the Web</h3>
       <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#"><i class="fa fa-linkedin" style="font-size:36px;color: black;"></i></a></li>
+        <li><a href="#"><i class="fa fa-github" style="font-size:36px; color: black;"></i></a></li>
+        <li><a href="#"><i class="fa fa-file-pdf-o" style="font-size:36px; color: black;"></i></a></li>
       </ul>
       </div>
       <div id="bottompage">qlip © 2016. All Rights Reversed</div>
