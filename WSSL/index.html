@@ -4,7 +4,7 @@
         <title>New York City Women's Shooting Sports League</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            *{padding: 0; margin:0;font-family: "Trebuchet", helvetica, sans-serif;}
+            *{padding: 0; margin:0;font-family: "Trebuchet", helvetica, sans-serif; color: #FFFFFF;}
             body{
                 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
                 background-size: cover;
@@ -56,14 +56,37 @@
             text-decoration: none;
         }
 
-        h1, h3, p{
-            color: #FFFFFF;
+      
+        header{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 30px;
+            padding-top: 73px;
+            
         }
 
-        header, main{
+        h1{
+            width: 545px;
+            padding-left: 60px;
+        }
+
+        h3{
+            width: 530px;
+            padding: 8px 60px;
             display: flex;
-            justify-content: space-around;
-            /*text-align: center;*/
+            justify-content: flex-start; 
+        }
+        
+
+        main{
+            /*display: flex;
+            justify-content: flex-start;*/
+        }
+
+        #events{
+            background-color: rgb(0, 0, 0);
+            width: 500px;
+            height: 500px;
         }
         </style>
     </head>
@@ -86,6 +109,7 @@
         <main>
             <!--<img src="http://www.nycwssl.org/group.jpg" alt="group photo">-->
             <h3>Providing a safe, educational and enjoyable environment for all levels of female shooters in the shooting sports</h3>
+            <div id="events"></div>
         </main>
         <footer>
             <!--<P>Copyright &copy; 2016, NYC WSSL</P>
