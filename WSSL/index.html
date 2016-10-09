@@ -1,133 +1,81 @@
+<!DOCTYPE html>
 <html>
+<head>
+	<title>New York City Women's Shooting Sports League</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    	*{padding: 0; margin: 0;}
+    	nav{
+    		/*background-color: black;*/
+    		border-bottom: black solid 2px;
+    		height: 75px;
+    	}
 
-    <head>
-        <title>New York City Women's Shooting Sports League</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            *{padding: 0; margin:0;font-family: "Trebuchet", helvetica, sans-serif; color: #FFFFFF;}
-            body{
-                background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
-                background-size: cover;
-            }
-            nav{
-                background-color: black;
-                border-bottom: white solid 2px;
-                height: 60px;
-            }
+    	ul{
+    		list-style: none;
+    	}
 
-            header{
-                /*background-color: yellow;*/
-            }
+    	a {
+    		text-decoration: none;
+    		color: #000000;
+    	}
 
-            main{
-                /*background-color: red;*/
-            }
+    	main{
+    		 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
+    		 background-size: cover;
+    	}
 
-            footer{
-                /*background-color: blue;*/
-            }
+    	#navlinks a:hover{
+    		color: #FFFFFF;
+    		background-color: black; 
+    	}
 
-            ul{
-                display: flex;
-                font-size: 20px;
-                justify-content: flex-end;
-                list-style: none;
-                padding: 10px 0 0 0;       
-            }
+    	#navlinks{
+    		padding-top: 20px;
+    	}
 
-            li{
-                padding: 10px 20px;
+    	@media only screen and (min-width: 768px){
+    		#navlinks ul{
+    			display: flex;
+    			justify-content: space-around;
+    		}
 
-            }
-
-            a{
-                color: #FFFFFF;
-                text-decoration: none;
-            }
-
-            a:hover{
-                color: #333;
-                background-color: #FFFFFF;
-                padding: 10px;
-        }
-
-            a:focus{
-            background-color: #FFFFFF;
-            text-decoration: none;
-        }
-
-      
-        header{
-            display: flex;
-            justify-content: flex-start;
-            font-size: 30px;
-            padding-top: 73px;
-            
-        }
-
-        h1{
-            width: 545px;
-            padding-left: 60px;
-        }
-
-        #events {
-            width: 530px;
-            padding: 8px 60px;
-            display: flex;
-            justify-content: flex-start; 
-        }
-        
-        
-
-        main{
-            /*display: flex;
-            justify-content: flex-start;*/
-        }
-
-        #events{
-            /* background-color: rgb(0, 0, 0); */
-            width: 610px;
-            /* height: 528px; */
-            /* float: right; */
-            padding: 100px 106px 0 0;
-            font-size: 25px;
-            display: inherit;
-        }
-
-        
-        </style>
-    </head>
-    
-    <body>
-        <nav>
-             <a href="#" style="float:left;">NYC WSSL</a>
-            <ul>
-                <li><a href="http://www.nycwssl.org/events.htm">Events</a></li>
-                <li><a href="http://www.nycwssl.org/gallery.htm">Gallery</a></li>
-                <li><a href="http://www.nycwssl.org/press.htm">Press</a></li>
-                <li><a href="http://www.meetup.com/NYCWSSL/">Join our Meetup</a></li>
-                <li><a href="http://www.nycwssl.org/contact.htm">Contact Us</a></li>
-            </ul>
-        </nav>
-           <header>
-            <h1>Women's Shooting Sports League</h1>
-            <!--<h3>Providing a safe, educational and enjoyable environment for all levels of female shooters in the shooting sports</h3>-->
-        </header>
-        <main>
-            <!--<img src="http://www.nycwssl.org/group.jpg" alt="group photo">-->
-            <p>Providing a safe, educational and enjoyable environment for all levels of female shooters in the shooting sports</p>
-            <div id="events">
-                <h2>Events</h2>
-                <p>September 19 (Monday): .22 rifle shoot at the Westside Rifle & Pistol Range. </p>
-                <br>
-                <p>October 17 (Monday): .22 rifle shoot at the Westside Rifle & Pistol Range. </p>
-                <br>
-                </div>
-            <p>For information about additional events around New York State visit the New York State Rifle & Pistol Association Web site and check the Events calendar.</p>
-        </main>
-        <footer>
-            <!--<P>Copyright &copy; 2016, NYC WSSL</P>
-            <P>Photo Copyright &copy; Cathryne Czubek</P>-->
-        </footer>
-    </body>
+    		#logo{
+    			float: left;
+    		}
+    	}
+    	@media only screen and (max-width: 768px){}
+    </style>
+</head>
+<body>
+	<nav>
+	<div id="logo">
+		<a href="#"><img src="WSSL-Logo.png"></a>
+	</div>
+	<div id="navlinks">	
+		<ul>
+			<li><a href="">Gallery</a></li>
+			<li><a href="">Press</a></li>
+			<li><a href="">Join our Meetup</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>
+	</div>
+	</nav>
+	<header>
+		<p>Women's Shooting Sports League</p>
+		<p>Providing a safe, educational and enjoyable environment for all levels of female shooters in the shooting sports</p>
+	</header>
+	<main>
+		<div id="events">
+			<ul><h3>Events</h3></ul>
+			<li>October 17 (Monday): .22 rifle shoot at the Westside Rifle & Pistol Range.</li>
+			<li></li>
+		
+		<p>For information about additional events around New York State visit the New York State Rifle & Pistol Association Web site and check the Events calendar.</p>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2016, NYC WSSL</p>
+	</footer>
+</body>
 </html>
