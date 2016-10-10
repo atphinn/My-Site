@@ -25,6 +25,7 @@
     		 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
     		 background-size: cover;
 			 padding: 20px;
+			 height: 800px;
     	}
 
 		#events{
@@ -60,9 +61,21 @@
     	}
 
 
-		#mask {
-   			overflow: hidden;
-   			width: 966px;
+		.slider-wrap{
+			overflow: hidden;
+			width: 1000px;
+			height: 1000px;
+		}
+
+		#slider{
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		#slider li{
+			position: absolute;
+			right: -1000px;
 		}
 
 		#slider li.firstanimation {
@@ -75,27 +88,58 @@
 
 		/* ANIMATION */
 
-@keyframes cycle {
-   0%  { left: 0px; } /* When you start the slide, the first image is already visible */
-   4%  { left: 0px; } /* Original Position */
-   16% { left: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
-   20% { left: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
-   21% { left: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
-   92% { left: -325px; opacity: 0; z-index: 0; }
-   96% { left: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
-   100%{ left: 0px; opacity: 1; }
-}
+		@keyframes cycle {
+		   0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+		   4%  { right: 0px; } /* Original Position */
+		   16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+		   20% { right: 1000px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+		   21% { right: -1000px; opacity: 0; z-index: -1; } /* Return to Original Position */
+		   92% { right: -1000px; opacity: 0; z-index: 0; }
+		   96% { right: -1000px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+		   100%{ right: 0px; opacity: 1; }
+		}
 
-@keyframes cycletwo {
-   0%  { left: -925px; opacity: 0; } /* Original Position */
-   16% { left: -925px; opacity: 0; }/* Starts moving after 16% to this position */
-   20% { left: 0px; opacity: 1; }
-   24% { left: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
-   36% { left: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
-   40% { left: 925px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
-   41% { left: -925px; opacity: 0; z-index: -1; }   /* Return to Original Position */
-   100%{ left: -925px; opacity: 0; z-index: -1; }
+		@keyframes cycletwo {
+		   0%  { right: -1000px; opacity: 0; } /* Original Position */
+		   16% { right: -1000px; opacity: 0; }/* Starts moving after 16% to this position */
+		   20% { right: 0px; opacity: 1; }
+		   24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+		   36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+		   40% { right: 1000px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+		   41% { right: -1000px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+		   100%{ right: -1000px; opacity: 0; z-index: -1; }
+		}
+
+		@keyframes cyclethree {
+		   0%  { right: -325px; opacity: 0; }
+		   36% { right: -325px; opacity: 0; }
+		   40% { right: 0px; opacity: 1; }
+		   44% { right: 0px; opacity: 1; }
+		   56% { right: 0px; opacity: 1; }
+		   60% { right: 325px; opacity: 0; z-index: 0; }
+		   61% { right: -325px; opacity: 0; z-index: -1; }
+		   100%{ right: -325px; opacity: 0; z-index: -1; }
+		}
+
+		@keyframes cyclefour {
+		   0%  { right: -325px; opacity: 0; }
+		   56% { right: -325px; opacity: 0; }
+		   60% { right: 0px; opacity: 1; }
+		   64% { right: 0px; opacity: 1; }
+		   76% { right: 0px; opacity: 1; z-index: 0; }
+		   80% { right: 325px; opacity: 0; z-index: 0; }
+		   81% { right: -325px; opacity: 0; z-index: -1; }
+		   100%{ right: -325px; opacity: 0; z-index: -1; }
+		}
+		@keyframes cyclefive {
+		   0%  { right: -325px; opacity: 0; }
+		   76% { right: -325px; opacity: 0; }
+		   80% { right: 0px; opacity: 1; }
+		   84% { right: 0px; opacity: 1; }
+		   96% { right: 0px; opacity: 1; z-index: 0; }
+		   100%{ right: 325px; opacity: 0; z-index: 0; }
+		}
 
 
-    	}
+    }
     	@media only screen and (max-width: 768px){}
