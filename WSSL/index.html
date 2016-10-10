@@ -3,63 +3,7 @@
 <head>
 	<title>New York City Women's Shooting Sports League</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-    	*{padding: 0; margin: 0; font-family:"Trebuchet MS", Helvetica, sans-serif}
-    	nav{
-    		/*background-color: black;*/
-    		border-bottom: black solid 2px;
-    		height: 75px;
-    	}
-
-    	ul{
-    		list-style: none;
-    	}
-
-    	a {
-    		text-decoration: none;
-    		color: #000000;
-    	}
-
-		header{
-			text-align: center;
-			padding: 20px;
-		}
-
-    	main{
-    		 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
-    		 background-size: cover;
-			 padding: 20px;
-    	}
-
-		#events{
-			color: #FFFFFF;
-		}
-    	
-    	@media only screen and (min-width: 768px){
-    		#navlinks ul{
-    			display: flex;
-    			justify-content: space-around;
-				
-    		}
-
-    		#logo{
-    			float: left;
-				height: 77px;
-    		}
-
-			#navlinks a:hover{
-    		color: #FFFFFF;
-    		background-color: black;
-			padding: 40px;
-    	}
-
-    	#navlinks{
-    		padding-top: 20px;
-    	}
-
-    	}
-    	@media only screen and (max-width: 768px){}
-    </style>
+	<link rel="stylesheet" href="wssl.css">
 </head>
 <body>
 	<nav>
@@ -81,13 +25,15 @@
 	</header>
 	<main>
 		<div id="events">
-			<ul><h3>Events</h3>
-				<li><img src="mondayshoot.png" alt="">October 17 (Monday): .22 rifle shoot at the Westside Rifle & Pistol Range.</li>
-				<li><img src="meetup.png" alt=""></li>
+			<div id="mask">
+			<ul id="slider"><h3>Events</h3>
+				<li id="first" class="firstanimation"><img src="monthly.png" alt="">October 17 (Monday): .22 rifle shoot at the Westside Rifle & Pistol Range.</li>
+				<li id="second" class="secondanimation"><img src="meetup.png" alt=""></li>
 				<li><img src="" alt=""></li>
 				<li><img src="" alt=""></li>
 			</ul>
 		<p>For information about additional events around New York State visit the New York State Rifle & Pistol Association Web site and check the Events calendar.</p>
+			</div>
 		</div>
 	</main>
 	<footer>

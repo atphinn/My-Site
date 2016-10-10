@@ -1,0 +1,101 @@
+/*wssl.css*/
+
+    	*{padding: 0; margin: 0; font-family:"Trebuchet MS", Helvetica, sans-serif}
+    	nav{
+    		/*background-color: black;*/
+    		border-bottom: black solid 2px;
+    		height: 75px;
+    	}
+
+    	ul{
+    		list-style: none;
+    	}
+
+    	a {
+    		text-decoration: none;
+    		color: #000000;
+    	}
+
+		header{
+			text-align: center;
+			padding: 20px;
+		}
+
+    	main{
+    		 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
+    		 background-size: cover;
+			 padding: 20px;
+    	}
+
+		#events{
+			color: #FFFFFF;
+		}
+    	
+    	@media only screen and (min-width: 768px){
+    		#navlinks ul{
+    			display: flex;
+    			justify-content: space-around;
+				
+    		}
+
+    		#logo{
+    			float: left;
+				height: 77px;
+    		}
+
+			#navlinks a:hover{
+    		color: #FFFFFF;
+    		background-color: black;
+			padding: 40px;
+    	}
+
+    	#navlinks{
+    		padding-left: 20px;
+    	}
+
+    	#events ul{
+    		display: flex;
+    		justify-content: space-between;
+
+    	}
+
+
+		#mask {
+   			overflow: hidden;
+   			width: 966px;
+		}
+
+		#slider li.firstanimation {
+		   animation: cycle 25s linear infinite;
+		}
+
+		#slider li.secondanimation {
+		   animation: cycletwo 25s linear infinite;
+		}
+
+		/* ANIMATION */
+
+@keyframes cycle {
+   0%  { left: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { left: 0px; } /* Original Position */
+   16% { left: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { left: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { left: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { left: -325px; opacity: 0; z-index: 0; }
+   96% { left: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ left: 0px; opacity: 1; }
+}
+
+@keyframes cycletwo {
+   0%  { left: -925px; opacity: 0; } /* Original Position */
+   16% { left: -925px; opacity: 0; }/* Starts moving after 16% to this position */
+   20% { left: 0px; opacity: 1; }
+   24% { left: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+   36% { left: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+   40% { left: 925px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+   41% { left: -925px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   100%{ left: -925px; opacity: 0; z-index: -1; }
+
+
+    	}
+    	@media only screen and (max-width: 768px){}
