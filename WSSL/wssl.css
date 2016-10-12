@@ -1,0 +1,146 @@
+/*wssl.css*/
+
+    	*{padding: 0; margin: 0; font-family:"Trebuchet MS", Helvetica, sans-serif}
+    	nav{
+    		/*background-color: black;*/
+    		border-bottom: black solid 2px;
+    		height: 75px;
+    	}
+
+    	ul{
+    		list-style: none;
+    	}
+		
+		a{
+			text-decoration: none;
+		}
+
+    	nav ul a {
+    		
+    		color: #000000;
+    	}
+
+		header{
+			text-align: center;
+			padding: 20px;
+		}
+
+    	main{
+    		 background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("WSSLbg.jpg");
+    		 background-size: cover;
+			 padding: 20px;
+			 height: 800px;
+    	}
+
+		#events{
+			color: #FFFFFF;
+			padding-left: 150px;
+		}
+
+		#events a {
+    		
+    		color: #FFFFFF;
+    	}
+
+		footer{
+			border-top: black solid 2px;
+    		padding: 20px 50px;
+		}
+    	
+    	@media only screen and (min-width: 768px){
+    		#navlinks ul{
+    			display: flex;
+    			justify-content: space-around;
+				
+    		}
+
+    		#logo{
+    			float: left;
+				height: 77px;
+    		}
+
+			#navlinks a:hover{
+    		color: #FFFFFF;
+    		background-color: black;
+			padding: 40px;
+    	}
+
+    	#navlinks{
+    		padding: 20px;
+    	}
+
+    	#events ul{
+    		display: flex;
+    		justify-content: space-between;
+
+    	}
+
+    	#events a:hover{
+    		color: #3D5229;
+    	}
+
+
+		.slider-wrap{
+			overflow: hidden;
+			width: 1000px;
+			height: 600px;
+		}
+
+		#slider{
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		#slider li{
+			position: absolute;
+			right: -1000px;
+		}
+
+		#slider li.firstanimation {
+		   animation: cycle 25s linear infinite;
+		}
+
+		#slider li.secondanimation {
+		   animation: cycletwo 25s linear infinite;
+		}
+
+		/* ANIMATION */
+
+		@keyframes cycle {
+		   0%  { right: 0px; } /* When you start the slide, the first image is already visible */
+		   4%  { right: 0px; } /* Original Position */
+		   16% { right: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+		   20% { right: 1000px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+		   21% { right: -1000px; opacity: 0; z-index: -1; } /* Return to Original Position */
+		   92% { right: -1000px; opacity: 0; z-index: 0; }
+		   96% { right: -1000px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+		   100%{ right: 0px; opacity: 1; }
+		}
+
+		@keyframes cycletwo {
+		   0%  { right: -1000px; opacity: 0; } /* Original Position */
+		   16% { right: -1000px; opacity: 0; }/* Starts moving after 16% to this position */
+		   20% { right: 0px; opacity: 1; }
+		   24% { right: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+		   36% { right: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+		   40% { right: 1000px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+		   41% { right: -1000px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+		   100%{ right: -1000px; opacity: 0; z-index: -1; }
+		}
+
+		@keyframes cyclethree {
+		   0%  { right: -325px; opacity: 0; }
+		   36% { right: -325px; opacity: 0; }
+		   40% { right: 0px; opacity: 1; }
+		   44% { right: 0px; opacity: 1; }
+		   56% { right: 0px; opacity: 1; }
+		   60% { right: 325px; opacity: 0; z-index: 0; }
+		   61% { right: -325px; opacity: 0; z-index: -1; }
+		   100%{ right: -325px; opacity: 0; z-index: -1; }
+		}
+
+
+
+    }
+    	@media only screen and (max-width: 768px){}
