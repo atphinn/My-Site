@@ -41,11 +41,11 @@
 		header{
 			text-align: center;
 			padding: 10px;
-			
+			border-bottom: white 1px solid;
 		}
 
     	main{
-    	
+    	    padding-top: 30px;
     	}
 
 		#content{
@@ -72,12 +72,16 @@
 			border-top: black solid 2px;
     		padding: 0px 20px;
 		}
+
+		events h3{
+			font-size: 30px;
+		}
     	
     	@media only screen and (min-width: 768px){
     		#navlinks ul{
     			display: flex;
-    			justify-content: flex-end;
-				
+    			justify-content: flex-start;
+				margin-right: 188px;
     		}
 
     		#logo{
@@ -88,7 +92,7 @@
 			#navlinks a:hover{
     		color: #FFFFFF;
     		background-color: black;
-			padding: 25px;
+			padding: 36px;
     	}
 
     	#navlinks{
@@ -107,11 +111,12 @@
 
 
 		.slider-wrap{
-			overflow: hidden;
-    width: 1500px;
+			    overflow: hidden;
+    width: 927px;
     height: 500px;
-    margin-top: -182px;
+    margin-top: 13px;
     float: right;
+    margin-right: 162px;
 		}
 
 		#slider{
