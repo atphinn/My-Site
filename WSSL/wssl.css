@@ -77,10 +77,18 @@
     		padding: 0px 20px;
 		}
 
-		events h3{
+		#events h3{
 			font-size: 30px;
 		}
     	
+		#gallery{
+			display: flex;
+		}
+
+		#gallery li{
+			    padding: 20px;
+				
+		}
     	@media only screen and (min-width: 768px){
     		#navlinks ul{
     			display: flex;
@@ -108,6 +116,10 @@
     		justify-content: space-between;
 
     	}*/
+
+		header h1{
+			text-align: center;
+		}
 
     	#content a:hover{
     		color: #3D5229;
@@ -139,7 +151,26 @@
     animation-delay: 1s;
 		}
 
-		
+		div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
 
 		/* ANIMATION */
 
