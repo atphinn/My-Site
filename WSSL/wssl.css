@@ -39,9 +39,9 @@
     	}
 
 		header{
-			text-align: center;
-			padding: 10px;
-			border-bottom: white 1px solid;
+			    padding: 10px;
+    border-bottom: white 1px solid;
+    margin-left: 164px;
 		}
 
     	main{
@@ -54,8 +54,12 @@
 		}
 
 		#events{
-    width: 182px;
+          width: 182px;
     float: left;
+    margin: -18px -60px;
+    border-right: white 1px solid;
+    padding-right: 36px;
+    height: 527px;
 }
 		
 
@@ -111,12 +115,12 @@
 
 
 		.slider-wrap{
-			    overflow: hidden;
+			      /* overflow: hidden; */
     width: 927px;
     height: 500px;
     margin-top: 13px;
-    float: right;
-    margin-right: 162px;
+    /* float: right; */
+    margin-left: 196px;
 		}
 
 		#slider{
