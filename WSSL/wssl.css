@@ -39,9 +39,10 @@ nav ul a {
 }
 
 header{
-    padding: 10px;
+   
     border-bottom: white 1px solid;
-    margin-left: 164px;
+    width: 1189px;
+    margin-left: -100px; 
 }
 
 main{
@@ -49,7 +50,7 @@ main{
 }
 
 #homeheader{
-    margin-left: 150px;
+    margin-left: 315px;
 }
 
 #content{
@@ -57,14 +58,6 @@ main{
 
 }
 
-#events{
-    width: 182px;
-    float: left;
-    margin: -18px -60px;
-    border-right: white 1px solid;
-    padding-right: 36px;
-    height: 527px;
-}
 
 
 #subcontent a {
@@ -123,6 +116,15 @@ display: flex;
 justify-content: space-between;
 
 }*/
+#events{
+    width: 182px;
+    float: left;
+    margin: -18px -60px;
+    border-right: white 1px solid;
+    padding-right: 36px;
+    height: 527px;
+}
+
 
 header h1{
     margin-left: 425px;
@@ -139,7 +141,7 @@ header h1{
   height: 500px;
   margin-top: 13px;
   /* float: right; */
-  margin-left: 196px;
+  margin-left: 152px;
 }
 
 #slider{
@@ -213,7 +215,7 @@ header{
 }
 
 #content {
-    padding: 20px;
+    padding: 0px;
 }
 
 #homeheader{
