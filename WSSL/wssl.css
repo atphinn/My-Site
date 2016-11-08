@@ -197,6 +197,11 @@ div.desc {
 }
 @media only screen and (max-width: 768px){
 
+body{
+    text-align: center;
+    font-size: 15px;
+}    
+
 #navlinks ul{
        display: none;
     }
@@ -212,6 +217,7 @@ div.desc {
 
 header{
     margin: 0 auto;
+    width: 100%;
 }
 
 #content {
@@ -219,7 +225,7 @@ header{
 }
 
 #homeheader{
-    margin: 0;
+    margin: 0 0 0 55px;
     width: 300px;
     text-align: center;
 
@@ -229,7 +235,6 @@ header{
     border-bottom: white 1px solid;
     padding-right: 36px;
     margin: 0 auto;
-    width: 100%;
     height: 100%;
 }
 
