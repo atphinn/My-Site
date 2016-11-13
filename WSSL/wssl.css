@@ -81,6 +81,7 @@ footer{
 
 #gallery{
     display: flex;
+    flex-wrap: wrap;
 }
 
 #gallery li{
@@ -127,7 +128,8 @@ justify-content: space-between;
 
 
 header h1{
-    margin-left: 425px;
+    margin-left: 675px;
+    margin-top: 26px;
 }
 
 #content a:hover{
