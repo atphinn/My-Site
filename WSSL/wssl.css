@@ -102,7 +102,7 @@ footer{
         
     }
 
-    #navlinks li.icon{display: none;}
+    #menu{display: none;}
 
     #logo{
         float: left;
@@ -210,17 +210,39 @@ body{
     text-align: center;
     font-size: 15px;
 }    
+#dropdown-menu {
+  border-radius:0px; 
+  box-shadow:none; 
+  border:none;
+  /*min-width: 200px;*/
+  top: 28px;
+  background-color: lightgray;
+display: block;
+    margin-top: 45px; 
+}
+
+
+
+ #menu{
+         position: static;
+    float: left;
+    margin-top: -68px;
+ }
+
+
 
 #navlinks ul{
        display: none;
+       
     }
 
-#navlinks.responsive li.icon{
-    position: absolute;
-    right: 0;
-    top: 0;
-    float: right;
+#navlinks{
+       position: absolute;
+    right: 189px;
+    top: 13px;
+    float: left;
     display: inline-block;
+    /* z-index: 10; */
 }    
 
 
