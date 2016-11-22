@@ -1,6 +1,7 @@
+
 var main = function() {
   $('img').click(function(){
-   $("#dropdown-menu").toggle(); 
+   $(".dropdown-menu").toggle(); 
   });
 };
  
