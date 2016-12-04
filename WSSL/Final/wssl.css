@@ -58,15 +58,30 @@ main{
     color: white;
 }
 
+.home{
+    padding-top: 25px;  
+}
+
 .break{
     border-top: white 1px solid;
-    width: 1039px;
+    width: 700px;
     margin: 29px auto;
+    vertical-align: baseline;
 }
+
+
+.thumbnail img{
+    width: 150px;
+  
+}
+
+.thumbnail img:hover{
+ transform: scale(1.5);
+    }
 
 /*Footer*/
 footer{
-
+font-size: 12px
 }
 
 /*Desktop / Tablet screens*/
@@ -82,6 +97,12 @@ nav ul{
     margin: 20px;
 }
 
+
+.thumbnail{
+    display: inline-block;
+    width: 320px;
+    padding: 30px 15px;
+}
 
 }
 
