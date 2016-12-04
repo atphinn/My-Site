@@ -1,0 +1,89 @@
+/*General Styling*/
+*{padding: 0; margin: 0; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif}
+
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Body Styling*/
+
+body{}
+
+/*Navigation*/
+nav{
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+#logo{
+    float: left;  
+    margin-top: -17px;
+}
+
+
+
+nav li a {
+    padding: 15px;
+    color: black;
+}
+
+nav a:hover{
+        color: #FFFFFF;
+        background-color: black;
+        padding: 20px;
+    }
+
+/*Main container*/
+#content{
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(images/WSSLbg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header{
+    color: white;
+    margin: 0 auto;
+}
+
+main{
+    /*background-color: black;*/
+    color: white;
+}
+
+.break{
+    border-top: white 1px solid;
+    width: 1039px;
+    margin: 29px auto;
+}
+
+/*Footer*/
+footer{
+
+}
+
+/*Desktop / Tablet screens*/
+@media only screen and (min-width: 768px){
+/*Navigation*/
+    .menu-icon{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 768px){}
