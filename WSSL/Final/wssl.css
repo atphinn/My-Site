@@ -40,6 +40,12 @@ nav a:hover{
         padding: 20px;
     }
 
+   main a:hover{
+       color:  #FFFFFF;
+        background-color: black;
+       font-size: 14px;
+   } 
+
 /*Main container*/
 #content{
     background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(images/WSSLbg.jpg);
