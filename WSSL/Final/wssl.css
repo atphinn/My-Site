@@ -113,4 +113,19 @@ nav ul{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 768px){}
+@media only screen and (max-width: 768px){
+
+    #logo{
+        margin: auto 0;
+    }   
+
+    nav {
+        height:62px;
+    }  
+
+   .menu-icon{
+   float: right;
+
+}
+ 
+}
