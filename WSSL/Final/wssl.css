@@ -180,13 +180,17 @@ nav li{
     color: white;
 }
 
+nav li a{
+    background-color: black;
+    color: white;
+}
+
 .icon{
     float: right;
-    /* position: static; */
-    /*margin: -69px 7px;*/
+    margin: 0px -200px 0 0;
 }
 .menu{
-        background-color: black;
+   
     width: 100px;
 }
 
