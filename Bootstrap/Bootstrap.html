@@ -125,6 +125,22 @@ ul li{
   padding: 13px 41px 0 0;
 }
 
+.portfolio_description {
+    position: absolute;
+    left: 143px;
+    bottom: -141px;
+    width: 532px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255,255,255);
+}
+
+.portfolio_description:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+/*Contact*/
+
 input,textarea{
     background: #eee;
     border-left:none;
@@ -233,6 +249,10 @@ footer{
     margin: 0 auto;
   }
   
+  .portfolio_description {
+   display: none;
+}
+
   ul li{
         margin-left: 40px;
   }
@@ -289,11 +309,41 @@ footer{
       <div id="portfolio" class="container">
         <h2 class="text-center">Portfolio</h2>
         <ul class="row">
-          <li><a href="http://www.atphinn.com/Dissh/Dishh2.html" target="_blank"><img src="DishMR.png" class="img-responsive col-sm-6"></a></li>
-          <li><a href="http://www.atphinn.com/NinjaRun/possible.html" target="_blank"><img src="NinjaRun.png" class="img-responsive col-sm-6" style="margin:-13px 0 11px 0;"></a></li>
-          <li><a href="https://github.com/atphinn/Projects/tree/master/fit2" target="_blank"><img src="rubysite.png" class="img-responsive col-sm-6"></a></li>
+          <li>
+          <a href="http://www.atphinn.com/Dissh/Dishh2.html" target="_blank">
+            <img src="DishMR.png" class="img-responsive col-sm-6" id="topimg">
+            <div class="portfolio_description">
+              <h4>Responsive Site: HTML 5, CSS3, Responsive</h4>
+            </div> 
+          </a>   
+          </li>
+          <li>
+            <a href="http://www.atphinn.com/NinjaRun/possible.html" target="_blank">
+              <img src="NinjaRun.png" class="img-responsive col-sm-6" style="margin:-13px 0 11px 0;">
+              <div class="portfolio_description" style="margin-left: 566px">
+                <h4>JS game: HTML 5, CSS3, JQuery, JavaScript</h4>
+              </div>
+              </a>
+                   
+          </li>
+          <li>
+          <a href="https://github.com/atphinn/Projects/tree/master/fit2" target="_blank">
+            <img src="rubysite.png" class="img-responsive col-sm-6">
+            <div class="portfolio_description" style="margin-bottom: -309px">
+                <h4>Ruby web app: HTML 5, CSS3, Ruby on Rails</h4>
+              </div>
+          </a>
+            
+          </li>
           <!--<li><a href="http://www.atphinn.com/ang-pizza/index.html" target="_blank"><img src="angular2.PNG" class="img-responsive col-sm-6" style="height: 300px;"></a></li>-->
-         <li><a href="http://www.atphinn.com/bolt/index.html" target="_blank"><img src="bolt.PNG" class="img-responsive col-sm-6" style="margin: 12px 0 11px 0;"></a></li>
+         <li>
+          <a href="http://www.atphinn.com/bolt/index.html" target="_blank">
+            <img src="bolt.PNG" class="img-responsive col-sm-6" style="margin: 12px 0 11px 0;">
+            <div class="portfolio_description" style="margin-left: 566px; margin-bottom: -309px">
+                <h4>Angular Web app: HTML 5, CSS3,JavaScript, Angular 1.X</h4>
+              </div>
+                    </a>
+         </li>
         </ul>
       </div>
       <div id="contact" class="container">
@@ -325,14 +375,14 @@ footer{
     <footer>
     
       <div id="social">
-      <h3>Around the Web</h3>
+      <h3>Social Media</h3>
       <ul>
         <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexander-phinn-91171533&title=&summary=&source=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexander-phinn-91171533"><i class="fa fa-linkedin" style="font-size:36px;color: black;"></i></a></li>
         <li><a href="https://github.com/atphinn"><i class="fa fa-github" style="font-size:36px; color: black;"></i></a></li>
         <li><a href="http://www.atphinn.com/AlexanderPResume.docx"><i class="fa fa-file-pdf-o" style="font-size:36px; color: black;"></i></a></li>
       </ul>
       </div>
-      <div id="bottompage">atp © 2016</div>
+      <div id="bottompage">atp © 2016: Made with Bootstrap</div>
     </footer>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
