@@ -4,13 +4,17 @@
      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       *{padding: 0; margin:0;}
         html body {
         background: #888;
         margin: 0;
         }
+
+@-ms-viewport{
+  width: device-width;
+}
 
         .white-text{
         color: white;
@@ -27,7 +31,7 @@
         }
 
         #navigation{
-        padding-left: 400px; 
+        padding-left: 380px; 
         }
 
 
@@ -57,7 +61,10 @@
           width: 250px;
           float: right;
         }
-
+a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
 
 header .container{
  
@@ -105,7 +112,7 @@ ul li{
     background: #eee;
     margin-top: -21px;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-    height: 800px;
+    height:760px;
 }
 
 #portfolio ul li{
@@ -145,19 +152,19 @@ footer{
     background-color: #aaa;
     text-align: center;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
-    margin: -151px;
+    margin: 0 -14px 0 -13px;
     padding-top: 19px
+  
     }
 
     #thispage{
       margin-left:-800px;
       margin-top: -17px;
-      margin-bottom: 2px;
+      margin-bottom: 46px;
     }
 
     #social{
-    float: right;
-    margin: -86px 437px 0 0;
+   
     text-transform: uppercase
     }
 
@@ -170,13 +177,69 @@ footer{
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     padding: 25px 0;
     background-color: #722872;
-    text-align: center;
+ 
     bottom: 0;
     position: static;
     margin-top: 82px;
 }
 
+/*Mobile*/
+
+@media only screen and (max-width: 768px){
+  .navbar{
+    padding: 21px;
+  }
+
+  .navbar img{
+    margin-top: -12px;
+    margin-left: 105px;
+    padding: 0;
+    width: 187px;
+  }
+
+  #navigation{
+    display: none;
+  }
+
+  .container{
+    height: 640px;
+    margin:0 auto;
+  }
+
+  #headercontainer img{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .text-center{
+    font-size: 17px;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  #portfolio{
+    height: 910px;
+    margin: 0 auto;
+  }
+
+  .c1{
+    margin: 12px auto;
+    width: 300px;
+  }
+
+  #contact{
+    height: 874px;
+  }
+
+  .f1, #message{
+      width: 300px;
+  }
+
+  #submit{
+        border: darkgray 3px;
+  }
 }
+
     </style>
     <!-- BootStrap -->
     
@@ -186,42 +249,43 @@ footer{
     <nav class="row navbar navbar-default navbar-fixed-top">
       <img src="http://www.atphinn.com/logo2.png" class="col-xs-2">
       <div id="navigation" class="col-md-8 navbar">
-      <button class="btn btn-md">About</button>
-     <button class="btn btn-md">Portfolio</button>
-      <button class="btn btn-md">Contact</button>
+      <a href="#about"><button class="btn btn-md">About</button></a>
+     <a href="#portfolio"><button class="btn btn-md">Portfolio</button></a>
+      <a href="#contact"><button class="btn btn-md">Contact</button></a>
       </div>
     </nav>
-    <header class="container">
-      <div class="headercontainer">
-         <img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/3/000/0d4/1b8/27dd617.jpg" class="img-responsive profile-img"> 
-      <p class="text-center white-text">The name is Alex and I'm an UX/UI designeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
-      <p class="text-center white-text">Web Developer - Graphic Artist - User Experience Designer</p>      
+    <header class="container" id="about">
+      <div id="headercontainer">
+         <img src="url.jpg" class="img-responsive profile-img"> 
+      <p class="text-center white-text">The name is Alex and I am a freelance web developer and graphic designer that was born and raised in Brooklyn, NY. I studied Graphic/Web Design at Pratt Institute. My experience in the digital advertising industry has given him a broad and practical professional base with a focus on communication and problem-solving. My Skills consist of HTML, CSS, JavaScript, React.js, and Ruby on Rails</p>
+      <p class="text-center white-text">Web Developer - Graphic Artist </p>      
       </div>
     </header>
      <main >
       <div id="portfolio" class="container">
         <h2 class="text-center">Portfolio</h2>
         <ul class="row">
-          <li><a href="#"><img src="DishMR.png" class="img-responsive col-sm-6"></a></li>
-          <li><a href="#"><img src="NinjaRun.png" class="img-responsive col-sm-6"></a></li>
-          <li><a href="#"><img src="rubysite.png" class="img-responsive col-sm-6"></a></li>
-          <li><a href="#"><img src="website.png" class="img-responsive col-sm-6" style="margin-top: 20px;"></a></li>
+          <li><a href="http://www.atphinn.com/Dissh/Dishh2.html" target="_blank"><img src="DishMR.png" class="img-responsive col-sm-6"></a></li>
+          <li><a href="http://www.atphinn.com/NinjaRun/possible.html" target="_blank"><img src="NinjaRun.png" class="img-responsive col-sm-6" style="margin:-13px 0 11px 0;"></a></li>
+          <li><a href="https://github.com/atphinn/Projects/tree/master/fit2" target="_blank"><img src="rubysite.png" class="img-responsive col-sm-6"></a></li>
+          <!--<li><a href="http://www.atphinn.com/ang-pizza/index.html" target="_blank"><img src="angular2.PNG" class="img-responsive col-sm-6" style="height: 300px;"></a></li>-->
+         <li><a href="http://www.atphinn.com/bolt/index.html" target="_blank"><img src="bolt.PNG" class="img-responsive col-sm-6" style="margin: 12px 0 11px 0;"></a></li>
         </ul>
       </div>
       <div id="contact" class="container">
         <h2 class="text-center">Contact Me</h2>
         <div id="form" >
           <label for="name"></label>
-          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Name" class="f1">
         </div>
-        <form id="contactform">
+        <form id="contactform" action="mailto:atphinn@gmail.com" method="get" >
         <div id="form" >
           <label for="email"></label>
-          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Email Address" class="f1">
         </div>    
           <div id="form">
              <label for="phone"></label>
-          <input type="text" placeholder="Phone Number">
+          <input type="text" placeholder="Phone Number" class="f1">
           </div>  
           <div id="form" class="grid">
             <label for="message"></label>
@@ -229,33 +293,22 @@ footer{
           </div>
           </br>
           <button type="submit" id="submit">Submit</button>
+          
           </form>
-        <p class="text-left c1">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
-        <br>
-        <br>
-        I promise to reply A.S.A.P.
-         <br>
-        <br>
-         <br>
-        <br>
-        Note: No spam/soliciting pour moi, merci :)</p>
+        <p class="text-left c1">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, Martial Arts classes (yes I have a black belt), just feel free to drop me a line anytime.
       </div>
     </main>
     <footer>
-      <div id="thispage">
-        <h3>ABOUT THIS PAGE</h3>
-        <p>Made with Bootstrap 
-          by Alex P</p>
-      </div>
+    
       <div id="social">
       <h3>Around the Web</h3>
       <ul>
-        <li><a href="#"><i class="fa fa-linkedin" style="font-size:36px;color: black;"></i></a></li>
-        <li><a href="#"><i class="fa fa-github" style="font-size:36px; color: black;"></i></a></li>
-        <li><a href="#"><i class="fa fa-file-pdf-o" style="font-size:36px; color: black;"></i></a></li>
+        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexander-phinn-91171533&title=&summary=&source=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexander-phinn-91171533"><i class="fa fa-linkedin" style="font-size:36px;color: black;"></i></a></li>
+        <li><a href="https://github.com/atphinn"><i class="fa fa-github" style="font-size:36px; color: black;"></i></a></li>
+        <li><a href="http://www.atphinn.com/AlexanderPResume.docx"><i class="fa fa-file-pdf-o" style="font-size:36px; color: black;"></i></a></li>
       </ul>
       </div>
-      <div id="bottompage">qlip © 2016. All Rights Reversed</div>
+      <div id="bottompage">atp © 2016</div>
     </footer>
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
