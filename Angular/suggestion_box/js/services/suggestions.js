@@ -20,7 +20,7 @@ app.factory('suggestions', [function () {
 				title: 'Prince dance party',
 				upvotes: 12,
 				comments: [],
-			},
+			}
 		]
 	};
 
