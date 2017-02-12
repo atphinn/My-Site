@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Suggestion Box</title>
-	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
-css/bootstrap.min.css" rel="stylesheet">
-	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
-	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
-</head>
-<body ng-app="SuggestionBox" ng-controller="HomeController">
-	<div class="container">
-		<div ng-view></div>
-	</div>
-
-	<!-- Modules -->
-	<script type="text/javascript" src="js/app.js"></script>
-
-	<!-- Controllers -->
-	<script type="text/javascript" src="js/controllers/HomeController.js"></script>
-
-	<!-- Services -->
-	<script type="text/javascript" src="js/services/suggestion.js"></script>
-</body>
+    <head>
+        
+        <title>Suggestion Box</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
+        <script type="text/javascript" src="js/vendor/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript"></script>
+    </head>
+    <body ng-app="SuggestionBox">
+        <div ng-view></div>
+        
+        <!-- Modules  -->
+        <script src="js/app.js"></script>
+        <!-- Controllers  -->
+        <script src="js/controllers/HomeController.js"></script>
+        <script src="js/controllers/SuggestionController.js"></script>
+        <!-- Services -->
+        <script src="js/services/suggestions.js"></script>
+    </body>
 </html>
