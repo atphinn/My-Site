@@ -1,4 +1,4 @@
-class PagedsController < ApplicationController
+class PagesController < ApplicationController
 
 	def welcome
 	end
