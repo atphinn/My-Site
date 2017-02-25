@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title
+    <title>ATPhinn</title>
     <link rel="stylesheet" type="text/css" herf="https://fonts.googleapis.com/css?family=Roboto:300,100,500,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <%= csrf_meta_tags %>	
@@ -10,6 +10,25 @@
   </head>
 
   <body>
+  <header>
+  <nav>
+  <ul>
+    <%= link_to '<li>Welcome</li>' .html_safe, 'welcome' %>
+     <%= link_to '<li>Portfolio</li>' .html_safe, 'portfolio' %>
+     <%= link_to '<li>About</li>' .html_safe, 'about' %>
+     <%= link_to '<li>Contact</li>' .html_safe, 'contact' %>
+      <%= link_to '<li>My Blog</li>'.html_safe, 'http://alexphinn.blogspot.com', :target => '_blank' %>
+
+  </ul>
+  </nav>
+  <h1 title="name">Alex Phinn</h1>
+</header>
     <%= yield %>
+     <footer>
+    <%= link_to image_tag('github-logo.png'), 'www.github.com' %>
+    <%= link_to image_tag('linkedin-logo.png'), 'www.linkedin.com' %>
+    <%= link_to image_tag('twitter-logo-button.png'), 'www.twitter.com' %>
+    </footer>
   </body>
+
 </html>
