@@ -9,7 +9,25 @@
   </head>
 
   <body>
+  <div id="menu">
+        <ul>
+            <li><%= link_to 'Home' .html_safe, 'pages#home' %> </li>
+            <li><%= link_to 'About' .html_safe, 'pages#about' %> </li>
+            <li><a href="#">Menu Item 3</a></li>
+            <li><a href="#">Menu Item 4</a></li>
+           
+    </div>
+    <div id="right">
+        <div id="menubar">
+            <div id="button">
+                Menu
+            </div>
+        </div>
+         	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+         	<footer>
+         		
+         	</footer>
     <%= yield %>
-   	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
   </body>
 </html>
