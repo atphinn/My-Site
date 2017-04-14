@@ -11,6 +11,6 @@ app.config(function($routeProvider) {
         templateUrl: "views/suggestion.html"
     })
 		.otherwise({
-			redirectTo: '/home'
+			redirectTo: '/'
 		});
 }); 

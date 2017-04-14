@@ -1,6 +1,42 @@
-*{padding:0; margin:0; }
+*{
+  background-color: rgb(148, 109, 53);
+}
 
-body{
-	background-color: rgb(210, 157, 115)!important;
-	text-align: center;
+.title{
+  text-align: center;
+  padding: 50px;
+}
+
+.suggest{
+  text-align: right;
+  padding: 20px;
+}
+
+
+h3{
+ margin: 50 0 0 0;
+ text-align: center; 
+}
+
+.form-group{
+  margin-left: 100px;
+  padding-left: 60px;
+  text-align: center;
+  width: 720px; 
+}
+
+.btn{
+  margin-left: 160px;
+  color: black;
+}
+
+a, a:link{
+ color: black;
+ margin-left: 160px; 
+ text-decoration: none; 
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
 }
