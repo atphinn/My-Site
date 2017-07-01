@@ -2,6 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+*{ margin:0; padding:0;}
+a{
+color: white;	
+list-style-type: none;
+text-decoration: none;
+}
+
+a:hover{
+	color: yellow;
+	font-size: 20px;
+}
+
+nav ul{
+	background-color: black;
+	width: 92px;
+	padding: 20px 0 20px 15px;
+}
+
+header{
+	background-color: black;
+	display: flex;
+
+}
+
+#logo{
+	// float: right;
+	    margin: 37px auto;
+}
 main{
-	backround-image: url("#")
+	width: 200px;
+    margin: 0 auto;
+	text-align: center;
+	padding-top: 21px;
+}
+
+
+footer{
+	padding-left: 130px;
+    margin-top: 60px;
+
 }
