@@ -3,8 +3,8 @@ class CreateSignups < ActiveRecord::Migration[5.0]
     create_table :signups do |t|
 
       t.timestamps
-      t.firstname
-      t.email
+      t.string :firstname
+      t.string :email
     end
   end
 end

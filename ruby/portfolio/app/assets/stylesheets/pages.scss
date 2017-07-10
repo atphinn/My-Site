@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 *{ margin:0; padding:0;}
+
 a{
 color: white;	
 list-style-type: none;
@@ -14,10 +15,13 @@ a:hover{
 	font-size: 20px;
 }
 
-nav ul{
-	background-color: black;
-	width: 92px;
-	padding: 20px 0 20px 15px;
+nav ul {
+	    display: flex;
+	    padding: 20px;
+}
+
+ li{
+	padding: 20px;
 }
 
 header{
@@ -27,19 +31,72 @@ header{
 }
 
 #logo{
-	// float: right;
-	    margin: 37px auto;
+	padding: 20px;
 }
+
 main{
-	width: 200px;
+
+	
     margin: 0 auto;
 	text-align: center;
 	padding-top: 21px;
+	position: relative;
 }
 
 
+footer img{
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+#social{
+   text-align:center;
+}
+
+button{
+	 border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+
+	nav ul{
+	background-color: black;
+	display: block;
+	width: 92px;
+	padding: 20px 0 20px 15px;
+	
+}
+
+#logo{
+	 margin: 0 auto;
+    padding: 38px 80px 0px 0;
+}
+
+#projects{
+    width: 330px;
+    margin: 0 auto;
+}
+
 footer{
-	padding-left: 130px;
-    margin-top: 60px;
+	padding: 20px 50px;
+
+}
+
+#social{
+	display: flex;
+}
+
+footer img{
+
+    padding: 20px;
+	
+}
+
 
 }
