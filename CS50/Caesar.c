@@ -27,30 +27,37 @@ int main(int argc, string argv[]){
 } */
 /* Final*/
 
-
 int main(int argc, string argv[]){
-    argc = 2;
-    int key = atoi(argv[1]);
-     if (argc != 2)
-    {
-        printf("Wrong command-line argument\n");
-        return 1;
-    }
-   printf("Enter Plain text: ");
-   string p = get_string();
-
-
-        for (int i = 0, n = strlen(p); i < n; i++)
+    
+         if (argc != 2)
         {
-            if ((p[i] >= 'a' && p[i] <= 'z') || (p[i] >= 'A' && p[i] <= 'Z'))
+            printf("Usage: ./caesar k \n");
+            return 1;
+        }
+    
+        argc = 2;
+        int key = atoi(argv[1]);
+    
+       printf("Enter Plain text: ");
+       string p = get_string();
+    
+        printf("Cipher Text: ");
+        if (p != NULL){
+            for (int i = 0, n = strlen(p); i < n; i++)
             {
-                printf("%c", p[i] + key % 26  );
-            }
-            else
-            {
+                if (p[i] >= 'A' && p[i] <= 'Z'){
+                     p[i] = p[i] + key % 26;
+                }else if (p[i] >= 'a' && p[i] <= 'z'){
+    
+                    p[i] = p[i] + key % 26;
+                }else{
+    
+                    printf("%c", p[i]);
+                }
+    
                 printf("%c", p[i]);
             }
-        }
-        printf("\n");
-
-}
+            printf("\n");
+    
+    }
+    }
