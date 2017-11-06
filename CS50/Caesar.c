@@ -4,60 +4,40 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-/*
 int main(int argc, string argv[]){
-    argc = 2;
-    int key = atoi(argv[1]);
-     if (argc != 2)
+
+    if (argc != 2)
     {
-        printf("Wrong command-line argument\n");
+        printf("Usage: ./caesar k \n");
         return 1;
     }
-   printf("Enter Plain text: ");
-   string p = get_string();
 
-    for (int i = 0, n = strlen(p); i < n; i++){
-        if (isalpha(p[i])){
-            p[i] = p[i] - 97;
-        }
+    argc = 2;
+    int key = atoi(argv[1]);
 
-        p[i] = ((p[i] + key) % 26 + 97);
-    }
-    printf("Cipher text: %s\n", p);
-} */
-/* Final*/
+    printf("Enter Plain text: ");
+    string p = get_string();
 
-int main(int argc, string argv[]){
+    printf("Cipher Text: ");
     
-         if (argc != 2)
+    if (p != NULL){
+        for (int i = 0, n = strlen(p); i < n; i++)
         {
-            printf("Usage: ./caesar k \n");
-            return 1;
-        }
-    
-        argc = 2;
-        int key = atoi(argv[1]);
-    
-       printf("Enter Plain text: ");
-       string p = get_string();
-    
-        printf("Cipher Text: ");
-        if (p != NULL){
-            for (int i = 0, n = strlen(p); i < n; i++)
-            {
-                if (p[i] >= 'A' && p[i] <= 'Z'){
-                     p[i] = p[i] + key % 26;
-                }else if (p[i] >= 'a' && p[i] <= 'z'){
-    
-                    p[i] = p[i] + key % 26;
-                }else{
-    
-                    printf("%c", p[i]);
-                }
-    
+            if (p[i] >= 'A' && p[i] <= 'Z'){
+                printf("%c", ((((p[i] - 65) + key) % 26) + 65));
+
+            }else if (p[i] >= 'a' && p[i] <= 'z' ){
+
+                printf("%c", ((((p[i] - 97) + key) % 26) + 97));
+
+            }else{
+
                 printf("%c", p[i]);
             }
-            printf("\n");
-    
+
+
+        }
+        printf("\n");
+
     }
-    }
+}
