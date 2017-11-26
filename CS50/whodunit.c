@@ -45,6 +45,10 @@ int main(int argc, char *argv[]){
         return 4;
     }
 
+     //change pure red to white (00000ff to ffffff)
+
+    //TODO
+
     //write outfile's BITMAPFILEHEADER
     fwrite(&bf, sizeof(BITMAPFILEHEADER), 1, outptr);
 
@@ -60,7 +64,7 @@ int main(int argc, char *argv[]){
         for(int j = 0; j < bi.biHeight; j++){
             //Temp storage
             RGBTRIPLE triple;
-
+           
             //read RGB triple from infile
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
 
