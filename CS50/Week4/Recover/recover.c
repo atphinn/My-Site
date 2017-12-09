@@ -40,28 +40,24 @@ int main(int argc, char *argv[]){
 
     FILE* output == NULL;
 
-    //keep count of pictures
-
-
-
     //read till buffer of 512 is reached
 
 
     while (fread(buffer, sizeof(512), 1, inptr) == 1) {
     //find beggining of JPG
         if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0 ){
-            if (jpeg_found == 1){
+            
 
-                fclose(output);
-                char filename[8];
-            sprintf(argv[1], "%03i.jpeg", n);
-            output = fopen(filename, "a");
-            n++;
+        fclose(output);
+        char filename[8];
+        sprintf(filename, "%03i.jpeg", n);
+        output = fopen(filename, "w");
+        n++;
 
-             fwrite(buffer, sizeof(512),1,output);
-            }else{
-                jpeg_found = 1;
-            }
+        fwrite(buffer, sizeof(512),1,output);
+           
+            } else{
+                fwrite(buffer, sizeof(buffer), 1, outptr);
 
 
         }
