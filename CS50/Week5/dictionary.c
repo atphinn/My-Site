@@ -28,7 +28,8 @@ bool load(const char *dictionary)
         Linked list/hash
         sort in to 2 groups ex: if (n % 2 == 1), odd box else even box or multiple boxes 
         A - D E-H I-M N-Q R - U Nodes
-        node:
+*/
+        //node:
         typedef struct node{
             char word[LENGTH + 1];
             struct node *node;
@@ -45,7 +46,7 @@ bool load(const char *dictionary)
         }
         node
 
-        popo hase and scan dic word
+        //popo hase and scan dic word
 
         while (fscanf (file, "%s", word) != EOF){
             ...//Malloc a node *for each new word and check if null so speller quits
@@ -61,7 +62,7 @@ bool load(const char *dictionary)
             new_node -> head;
 
         }
-        */
+        
     return false;
 }
 
