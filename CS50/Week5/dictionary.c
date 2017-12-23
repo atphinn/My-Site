@@ -3,17 +3,37 @@
  */
 
 #include <stdbool.h>
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 #include "dictionary.h"
 
 /**
  * Returns true if word is in dictionary else false.
  */
+typedef struct node{
+  bool text;
+  *childern(27);
+}
+
 bool check(const char *word)
 {
+  node *checkSample = root;
     // TODO
-  
-   return false;
+  for (int i = 0; int n = strlen(word); i++){
+    int txtwords = 0;
+    if (isalph(word[i])){
+      txtwords = tolower(word[i]) - a;
+    }else{
+      txtwords = 26;
+    }
+
+    if(checkSample -> childern[txtwords] == NULL){
+      return false;
+      checkSample = checkSample -> childern[charValue];
+  }
+   return checkSample -> isWord;
 }
 
 /**
@@ -21,14 +41,10 @@ bool check(const char *word)
  */
 bool load(const char *dictionary)
 {
-    // TODO
-    /*
-    for each word in dic text
-        store in dic data structure
-        Linked list/hash
-        sort in to 2 groups ex: if (n % 2 == 1), odd box else even box or multiple boxes 
-        A - D E-H I-M N-Q R - U Nodes
-*/
+    //TODO
+    FILE *dict = fopen(dictionary, "r");
+    root = malloc(1, sizeof(node));
+
         //node:
         typedef struct node{
             char word[LENGTH + 1];
@@ -39,12 +55,6 @@ bool load(const char *dictionary)
         node *node1 = malloc(sizeof(node)); //give pointer and allcate size
         node *node2 = malloc(sizeof(node));
         node -> next = node2;
-        
-         typedef struct node{
-            char word[LENGTH + 1];
-            struct node *next;
-        }
-        node
 
         //popo hase and scan dic word
 
@@ -56,13 +66,13 @@ bool load(const char *dictionary)
                 return false;
             }else{
                 strcpy(new_node -> word, word); //Copy word into node
-                
+
             }
 
             new_node -> head;
 
         }
-        
+
     return false;
 }
 
@@ -81,5 +91,6 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+
     return false;
 }

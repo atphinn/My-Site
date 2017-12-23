@@ -1,0 +1,4 @@
+/Users/alexanderphinn/Documents/Programming/My-Works/CS50/Week4/resize.c:4:10: fatal error: 'bmp.h' file not found
+#include "bmp.h"
+         ^~~~~~~
+1 error generated.
