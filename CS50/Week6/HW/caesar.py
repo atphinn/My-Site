@@ -1,29 +1,23 @@
 import sys
+from string import ascii_uppercase, ascii_lowercase
+p = input("Enter plain text: ")
+shift = int(sys.argv[1])
+cipher = list(p)
 
-def main ():
- if len(sys.argv) == 2:
-     p = input("Enter plain text: ")
-     shift = sys.argv[1]
-     # for i in range(p):
-     #     if i.isalpha():
-     #         finalLetter = chr((ord(i.lower()) - 97 + shift) % 26 + 97)
-     # print(finalLetter)
+for i in range(len(p)):
+ shifted = ord(cipher[i]) + shift
 
-     for i in p:
-        if i.isalpha():
-            key = ord(i)
-            key += shift
+ if p[i] in ascii_uppercase:
+  if shifted > 90:
+   shifted = shifted - 90 + 64
+  elif shifted < 65:
+   shifted = 91 - (65 - shifted )
 
-            if i.isupper():
-                if key < ord('A'):
-                    key += 26
-                elif key > ord('Z'):
-                    key -= 26
-            elif i.islower():
-                if key < ord('a'):
-                    key += 26
-                elif key > ord('z'):
-                    key -= 26
-            print(char(key))
-if __name__ == '__main__':
-    main()
+ elif p[i] in ascii_lowercase:
+  if shifted > 122:
+   shifted = shifted - 122 + 96
+  elif shifted < 97:
+   shifted = 123 - (97 - shifted )
+
+ cipher[i] = chr(shifted)
+print(''.join(cipher))
