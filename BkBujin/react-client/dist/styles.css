@@ -1,43 +1,7 @@
 body {
-  margin: 0;
   font-family: Texta-Book,Arial,sans-serif;
-}
-
-header{
-  display: block;
-  background-color: black;
-  width: 100%;
-  color: white;
-  padding: 1em 0 0 0;
-}
-
-#logo{
-  justify-content: flex-start !important;
-  margin-left: 17px;
-  float: left;
-  list-style: none;
-
-}
-
-#headerButtons{
-  display: flex;
-  line-height: inherit;
   list-style-type: none;
   margin: 0;
-  flex-direction: row;
-  -ms-flex-direction: row;
-  justify-content: flex-end;
-}
-
-
-
-.navButton{
-  display: block;
-  width: 15%;
-  height: 50px;
-  background-color: black;
-  align-items: baseline;
-  -webkit-box-align: center !important;
 }
 
 a{
@@ -50,3 +14,55 @@ a{
 a:hover{
   color: lightGrey;
 }
+/* Header - Navigation Bar */
+header{
+  background-color: black;
+  display: block;
+  color: white;
+  padding: 1em 0 0 0;
+  width: 100%;
+}
+
+#logo{
+  float: left;
+  justify-content: flex-start !important;
+  list-style: none;
+  margin-left: 17px;
+}
+
+#headerButtons{
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: flex-end;
+  line-height: inherit;
+  margin: 0;
+}
+
+.navButton{
+  align-items: baseline;
+  background-color: black;
+  display: block;
+  height: 50px;
+  width: 15%;
+  -webkit-box-align: center !important;
+}
+
+/* HomePage */
+#mainBanner {
+  background-color: green;
+  height: 500px;
+}
+
+#bujinBanner {
+  background-color: red;
+  height: 500px;
+}
+
+#mapBanner {
+  background-color: yellow;
+  height: 500px;
+}
+
+
+

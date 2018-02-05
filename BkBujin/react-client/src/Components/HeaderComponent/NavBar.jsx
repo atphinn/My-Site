@@ -7,7 +7,7 @@ class NavBar extends Component{
       <header>
         <li id="logo">
           <Link to="">
-            <img src={'http://emblemsbf.com/img/3040.jpg'} alt="boohoo" className="img-responsive" style={{height: "3em"}}/>
+            <img src={'http://emblemsbf.com/img/3040.jpg'} alt="Muzosa" className="img-responsive" style={{height: "3em"}}/>
           </Link>
         </li>
         <ul id="headerButtons">
