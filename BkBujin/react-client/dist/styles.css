@@ -50,8 +50,28 @@ header{
 
 /* HomePage */
 #mainBanner {
-  background-color: green;
-  height: 500px;
+  /* background-color: green; */
+  /* height: 500px; */
+  width: 100%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.typeContainer{
+  color: white;
+  float: none;
+  margin: -291px 0 142px 131px;
+  position: relative;
+}
+
+
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 25px 40px;
 }
 
 #bujinBanner {
