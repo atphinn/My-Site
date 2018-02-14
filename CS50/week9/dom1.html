@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dom1</title>
+
+  </head>
+  <body>
+    <form id="demo">
+      <input id="name" placeholder="Name" type="text">
+      <input type="submit">
+    </form>
+    <script>
+    document.getElementById('demo').onsubmit = function() {
+        alert("Hello, " + document.getElemetById("name").value = "!");
+        return false;
+      };
+    </script>
+  </body>
+</html>

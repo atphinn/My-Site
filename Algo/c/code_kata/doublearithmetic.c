@@ -13,19 +13,19 @@ double result;
   if (strcmp(operator, "add") == 0) {
 
     result = a+b;
-    printf("The result is %d\n", result);
+    printf("The result is %f\n", result);
   } else if (strcmp(operator ,"subtract") == 0) {
 
     result = a-b;
-    printf("The result is %d\n", result);
+    printf("The result is %f\n", result);
   } else if (strcmp(operator , "multiply") == 0){
 
     result = a*b;
-    printf("The result is %d\n", result);
+    printf("The result is %f\n", result);
   }else if (strcmp(operator , "divide") == 0) {
 
     result = a/b;
-    printf("The result is %d\n", result);
+    printf("The result is %f\n", result);
   }else{
     return 1;
   }

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dom0</title>
+    <script>
+      function greet() {
+        alert("Hello, " + document.getElemetById("name").value);
+      }
+    </script>
+  </head>
+  <body>
+    <form class="demo" onsubmit="greet(); return false">
+      <input id="name" name="Name" type="text">
+      <input type="submit">
+    </form>
+  </body>
+</html>

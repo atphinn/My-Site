@@ -1,0 +1,4 @@
+/home/r3tr0/Documents/My-Works/CS50/Week2/Greedy.c:2:10: fatal error: cs50.h: No such file or directory
+ #include <cs50.h>
+          ^~~~~~~~
+compilation terminated.
