@@ -15,10 +15,10 @@ class NavBar extends Component{
             <Link to="">Home</Link>
           </li>
           <li className="navButton">
-            <Link to="">About</Link>
+            <Link to="/About">About</Link>
           </li>
           <li className="navButton">
-            <Link to="">Contact</Link>
+            <Link to="/Contact">Contact</Link>
           </li>
         </ul>
       </header>

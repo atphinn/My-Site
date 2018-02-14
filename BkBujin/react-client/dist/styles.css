@@ -2,6 +2,7 @@ body {
   font-family: Texta-Book,Arial,sans-serif;
   list-style-type: none;
   margin: 0;
+  position: relative;
 }
 
 a{
@@ -20,7 +21,9 @@ header{
   display: block;
   color: white;
   padding: 1em 0 0 0;
+  position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 #logo{
@@ -44,7 +47,7 @@ header{
   background-color: black;
   display: block;
   height: 50px;
-  width: 15%;
+  width: 16%;
   -webkit-box-align: center !important;
 }
 
@@ -66,17 +69,25 @@ header{
   position: relative;
 }
 
+.typeContainer2{
+  color: white;
+  float: right;
+  margin: -291px 131px 142px 0px;
+  position: relative;
+}
 
-button{
+
+
+.homePage{
   background-color: black;
   border: none;
   color: white;
-  padding: 25px 40px;
+  padding: 18px 51px;
 }
 
 #bujinBanner {
-  background-color: red;
-  height: 500px;
+
+
 }
 
 #mapBanner {
@@ -84,5 +95,58 @@ button{
   height: 500px;
 }
 
+/*Footer*/
+
+footer{
+  background-color: black;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  color: white;
+  padding: 1em;
+  position: absolute;
+  width: 100%;
+}
 
 
+#footerButtons{
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: center;
+  line-height: inherit;
+  margin: 0;
+}
+
+#social{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.fa {
+    padding: 16px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    color: white;
+}

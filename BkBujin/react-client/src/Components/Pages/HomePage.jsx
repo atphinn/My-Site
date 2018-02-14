@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
     return(
     <div id="mainBody">
       <div id="mainBanner">
-      <img src={'https://lh3.googleusercontent.com/lZf_Ji3FrgP20HC5shnpRqMNeBK6X4NB-jHoeeA_eiKV5b8gWrTawmdbxZzVCyBCOPsrdtklKIxTft3qZ_lSGPe3sm847AvR9JxpfeLMrXb9GAg9OdezD238ZEcxQJZlsTWuuBLtGMwAYHKjMK_zFJxx5wCCBVsI7pvclXFGWEQO7an3IO2W64oeAMVJkw61ev-l5obyE-FSE9zq-bvpwUyxVZF7xxUl66iQTQYGsNK8fGRQIzCQpVM1B35KBcRR9b8gZed00nvnHAMKbxJhPh3RGfVITJ0Vk9a0EONnHpgvxKORMqGRdD2hhCTWsPlyh2X1jWMt3ctkkKhzlWwhhQ04NE3C1C8CTiPOJ85hx1TTAqPOn-LTd7QFY5EJTKfIdJxKtXSGqCl-T11suHKduX55-e83HLRkCvX6YC4l_3q8BqaQ-0W7jEguXyaVIVyZj593dvqGF7cHXtmxR2k8tdi4B4-oRcrDWaUI0nhcIAodnFaPvqcDl2Y0A-AMD_mUFS5UTBy2B_ePbWxks9dDwZvnAlMpKFvt_dL8Avxy-YXbbkHeQKNvSamFIYoDhRJsIJULNGc5UvuoGL2Ej_DoqWhaHo1yb2kauDHQJS9L=w852-h639-no'} alt="jumbotron" className="img-responsive" />
+      <img src={'https://lh3.googleusercontent.com/cfUGz8_iwIdP01HUxHRkDZDeryH-YYz1h6ZVJ9SRbzHS6-ZkKCywf8g166vC8yYANv7fIQNDT86UYnz36xYMceIoa_PZI7hb0ncQxw4dY_Bvs7lNduBl2NHSlQPT50xjjqALyhBdAm6SukN8Up3_UXSeffbIXI_Y_MSAXfyBT1bfr0gTs2yvrkb_4P3nm1T46Fv9sPRFIZuD32yqcWdCWblkbmYxP86hsQ6g8bLPsBp-pIEWVSuVmP0ttNTITYRfoSqVwvmPHsz09CmP-YShhQlVLy1ZALM9qFzSl7HAWVQ2GGpuaVd7Y8AsWYJDkmVpRuOBbz6aN3-5-39i1OuY0IvfXc0DlLxS_27KPxkkd8xB4_W66AWMT5iHCrOZUM3ge8MbAIwRsg0Og66U4wvyC0vuuFqsIHhy2sUts6yAPIuj5QjJKGC6DNXhuvE_3Sjusg529yYDihQgGMMiOD6VkRxvNo1vxP7VaDWIJkZwbW2JiXk45cPMPgWL21c7LE0Ncchxa3hP_r1yKFxK96G3n4yugNdaGdk1YW9Acu0SUgl88HxafYTfLiQshTnIkFrM-XLBA7J4Y0ZHFwFd0RunaX6Z2ADv_lfwrAICJt6u=w852-h639-no'} alt="jumbotron" className="img-responsive" />
       <div className='typeContainer'>
-        <h1>Who we are?</h1>
-        <button>Learn More</button>
+        <h1>What is BK Muzosa bujinkan?</h1>
+        <Link to="/About" className="homePage">Learn More</Link>
       </div>
       </div>
-      <div id="bujinBanner"><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztftfBdhLYHAxtmQFWmF63sT-FwseiZ7WUq5IYxqjOlZlCOQ6HQ'} className="img-responsive" /> </div>
+      <div id="bujinBanner">
+        <img src={'http://www.shingan.ro/wp-content/uploads/2013/04/Masaaki_Hatsumi.jpg'} className="img-responsive" />
+        <div className='typeContainer2'>
+          <h1>History of the Bujinkan?</h1>
+          <Link to="/About" className="homePage">Learn More</Link>
+        </div>
+      </div>
       <div id="mapBanner"></div>
     </div>
     )
