@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 class HomePage extends Component {
   render() {
@@ -19,7 +20,9 @@ class HomePage extends Component {
           <Link to="/About" className="homePage">Learn More</Link>
         </div>
       </div>
-      <div id="mapBanner"></div>
+      <div id="mapBanner">
+      
+      </div>
     </div>
     )
   }

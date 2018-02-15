@@ -1,4 +1,0 @@
-GoogleApi({
-  apiKey:  ,
-  libraries: ['places']
-});
