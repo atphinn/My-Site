@@ -1,8 +1,23 @@
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import GoogleMap from 'google-map-react';
 
 class HomePage extends Component {
+
+  static propTypes () {
+    center: PropTypes.array,
+    zoom: PropTypes.number,
+    greatPlaceCoords: PropTypes.any
+};
+
+static defaultProps = {
+    center: [59.938043, 30.337157],
+    zoom: 9,
+    greatPlaceCoords: {lat: 59.724465, lng: 30.080121}
+  };
+
+
+
   render() {
     return(
     <div id="mainBody">
@@ -21,7 +36,7 @@ class HomePage extends Component {
         </div>
       </div>
       <div id="mapBanner">
-      
+
       </div>
     </div>
     )
