@@ -1,0 +1,30 @@
+body {
+  font-family: Texta-Book,Arial,sans-serif;
+  list-style-type: none;
+  margin: 0 auto;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  /* color: white; */
+  font-size: 15px;
+}
+
+
+/*Header*/
+
+
+/*HomePage*/
+#mainBanner{
+display: flex;
+justify-content: flex-end;
+}
+
+
+.homeButton{
+  padding: 20px 50px;
+  background-color: Black;
+  color: white;
+}
