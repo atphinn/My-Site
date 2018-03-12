@@ -23,8 +23,8 @@ class Footer extends Component {
         </li>
         </ul>
         <div id="social">
-          <a href="http://tinyurl.com/yck2hfu" target="_blank" className="fa fa-facebook"></a>
-          <a href="#" className="fa fa-twitter"></a>
+          <a href="http://tinyurl.com/yck2hfu" target="_blank" className="fa fa-facebook btnSocial"></a>
+          <a href="#" className="fa fa-twitter btnSocial"></a>
         </div>
       </div>
       </footer>

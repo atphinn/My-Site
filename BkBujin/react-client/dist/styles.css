@@ -1,6 +1,6 @@
+*{list-style-type: none;}
 body {
   font-family: Texta-Book,Arial,sans-serif;
-  list-style-type: none;
   margin: 0 auto;
   position: relative;
 }
@@ -8,23 +8,84 @@ body {
 a{
   text-decoration: none;
   text-transform: uppercase;
-  /* color: white; */
-  font-size: 15px;
+  color: white;
+  font-size: 17px;
+}
+
+a:hover{
+  color: lightGrey;
 }
 
 
 /*Header*/
-
-
-/*HomePage*/
-#mainBanner{
-display: flex;
-justify-content: flex-end;
+header{
+  background-color: black;
+  color: white;
+  display: flex;
+  position: relative;
 }
 
+#logo{
+  padding: 20px 10px;
+}
+
+#headerButtons{
+  display: flex;
+  margin: 0 auto;
+}
+
+.navButton{
+  padding: 36px 20px;
+}
+
+/*HomePage*/
+
+#mainBody{
+
+}
+
+.typeContainer{
+  float: none;
+  margin: -170px 0 72px 1000px;
+  color: white;
+}
+
+.typeContainer2{
+  color: white;
+  float: left;
+  margin: -291px 131px 142px 0px;
+  position: relative;
+}
+
+.img-responsive{
+  width: 100%;
+}
 
 .homeButton{
   padding: 20px 50px;
   background-color: Black;
   color: white;
+  margin-left: 110px;
+
 }
+
+/* Footer */
+
+footer{
+  background-color: black;
+}
+
+#footerButtons{
+  display: flex;
+  justify-content: center;
+}
+
+
+#social{
+  margin-top: -69px;
+  padding-bottom: 90px;
+}
+}
+ .btnSocial{
+   padding: 0px 30px;
+ }
