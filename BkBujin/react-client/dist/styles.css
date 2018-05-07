@@ -12,8 +12,10 @@ a{
   font-size: 17px;
 }
 
-a:hover{
-  color: lightGrey;
+ul li a:hover{
+  color: black;
+  background-color: white;
+  padding: 35px 30px;
 }
 
 
@@ -41,38 +43,41 @@ header{
 /*HomePage*/
 
 #mainBody{
-
+  background-color: black;
 }
 
 .typeContainer{
   float: none;
-  margin: -170px 0 72px 1000px;
+  margin: -600px 0 200px 938px;
   color: white;
+  width: 456px;
 }
 
 .typeContainer2{
   color: white;
   float: left;
-  margin: -291px 131px 142px 0px;
+  margin: -518px 0px 0px 49px;
   position: relative;
+  width: 456px;
 }
 
 .img-responsive{
   width: 100%;
 }
 
-.homeButton{
+/* .homeButton{
   padding: 20px 50px;
   background-color: Black;
   color: white;
   margin-left: 110px;
 
-}
+} */
 
 /* Footer */
 
 footer{
   background-color: black;
+  margin: -19px 0 0 0;
 }
 
 #footerButtons{
@@ -82,8 +87,8 @@ footer{
 
 
 #social{
-  margin-top: -69px;
-  padding-bottom: 90px;
+  margin: -75px 0 0 100px;
+  padding-bottom: 11px;
 }
 }
  .btnSocial{

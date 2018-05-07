@@ -20,6 +20,9 @@ class NavBar extends Component{
           <li className="navButton">
             <Link to="/Contact">Contact</Link>
           </li>
+          <li className="navButton" >
+            <a href="http://www.muzosa.com" target="_blank" >Muzosa Bujinkan Dojo</a>
+        </li>
         </ul>
       </header>
     )
