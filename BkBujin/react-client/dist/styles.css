@@ -45,7 +45,7 @@ header{
 #mainBody{
   background-color: black;
 }
-
+/*About*/
 .typeContainer{
   float: none;
   margin: -600px 0 200px 938px;
@@ -73,6 +73,17 @@ header{
 
 } */
 
+/* Contact*/
+#contactInfo{
+  background-color: black;
+  height: 300px;
+  text-align: center;
+  width: 100%;
+}
+
+#img-contact{
+  width: 100%;
+}
 /* Footer */
 
 footer{
