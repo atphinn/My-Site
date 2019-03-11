@@ -46,16 +46,30 @@ header{
   background-color: black;
 }
 /*About*/
-.typeContainer{
+
+#mainBanner{
+  padding: 0 0 10px 0px;
+}
+
+.type {
+
+    background-color: black;
+    padding: 15px 20px;
+    text-align: center;
+
+}
+
+/* .typeContainer{
   float: none;
   margin: -600px 0 200px 938px;
+  text-align: center;
   color: white;
   width: 456px;
-}
+} */
 
 .typeContainer2{
   color: white;
-  float: left;
+  float: right;
   margin: -518px 0px 0px 49px;
   position: relative;
   width: 456px;
@@ -65,18 +79,15 @@ header{
   width: 100%;
 }
 
-/* .homeButton{
-  padding: 20px 50px;
-  background-color: Black;
-  color: white;
-  margin-left: 110px;
-
-} */
+.homeButton{
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+}
 
 /* Contact*/
 #contactInfo{
   background-color: black;
-  height: 300px;
   text-align: center;
   width: 100%;
 }

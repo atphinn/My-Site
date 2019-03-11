@@ -19,14 +19,18 @@ module.exports = {
         loader: 'style-loader!css-loader'
       },
       {
-        test: /\.png/,
-        loader: 'url-loader?limit=100000'
-
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader'
       },
-      {
-        test: /\.jpg/,
-        loader: 'url-loader?limit=100000'
-      },
+      // {
+      //   test: /\.png/,
+      //   loader: 'url-loader?limit=100000'
+      //
+      // },
+      // {
+      //   test: /\.jpg/,
+      //   loader: 'url-loader?limit=100000'
+      // },
       {
         test : /\.jsx?/,
         include : SRC_DIR,
@@ -39,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('development')
     })
   ]
 };

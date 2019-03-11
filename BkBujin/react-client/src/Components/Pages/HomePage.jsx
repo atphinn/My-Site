@@ -10,7 +10,7 @@ class HomePage extends Component {
     return(
     <div id="mainBody">
       <div id="mainBanner">
-        <img src={'https://i.ytimg.com/vi/0pXLm4Ao6-w/maxresdefault.jpg'} alt="jumbotron" className="img-responsive"/>
+        <img src={require('./img/Photos/about.jpg')} alt="jumbotron" className="img-responsive" />
       </div>
     </div>
     )

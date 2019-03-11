@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Brooklyn extends React.Component {
   render() {
     return(
-      <div>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
+      <div className='type'>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
     );
   }
 }
@@ -12,7 +12,7 @@ class Brooklyn extends React.Component {
 class Bujin extends React.Component {
   render() {
     return(
-      <div>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
+      <div className='type'>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
     );
   }
 }
@@ -32,11 +32,11 @@ class About extends Component {
     return(
     <div id="mainBody">
       <div id="mainBanner">
-      <img src={'https://lh3.googleusercontent.com/w3pImt8e0Onm3ukwjrOGTroVKeHokL1YWUHhyXlrgQIk6JV1VxbKg7qOEGnqXD0iDa6HLmE7bZL_liRV294HHe6LWMFLixEVtOHR74sH4edwTM0aTwXix7uotSgUZu04TwjITgl78ZLza2q84T6sh52DLOgcsMy8Mh9UF4mCpHTqXPlsDp-9-GEV5IhdoT_1SNXrsHFkziZjb_QItMY9zbek8sgftdP2KEQmt5XsSwK2itK0Jv7njEYnfi0jH4ahxTSkptMsuA7P8xKOF2Tbr5Yvqao1wz4ZyQgOnIudexw9L8dqtYB1YC7aDH2YexG2lbPyhB4ex4qngSw8SCfxEfSqBRXuNO-KwDRZAFVH6aRkN7IV4-j74bWn9hqQ9i60jHdsCEjyjCb_axL3yw4rOk5ux5d12PeanBLKpYLw0S2l4wugWAxBWZgQvZjBMkGiLVEcwXNrhsESFJ0ghWvuCrR8szgx72eTGnIYUFWeedr44lAN0uP5pPgg6aeOgTllQ1YRkqe3A-oOXcPKAu-zGaToFfFf7Qg3mxbOJ4ePlFrTaSnc6AmUjnayl4d0-DCXQ6F1figAbeAgEKa_iycgVF-UYXECv7_Ha1BLkFGo=w883-h662-no'} alt="jumbotron" className="img-responsive" />
-      <div className='typeContainer'>
+      <img src={require('./img/Photos/aboutTop.jpg')} alt="jumbotron" className="img-responsive" />
+      <div className='typeContainer2'>
         <h1>What is BK Muzosa Bujinkan?</h1>
-           <div onClick={() => this.onClick()}>
-             <div className="homeButton"><h2>More</h2></div>
+           <div onClick={() => this.onClick(this,mo)}>
+             <div className="homeButton" id='mo'><h2>Click here to learn more about Muzosa and the Bujinkan</h2></div>
            </div>
 
            {
@@ -48,12 +48,12 @@ class About extends Component {
       </div>
       </div>
       <div id="bujinBanner">
-        <img src={'http://www.shingan.ro/wp-content/uploads/2013/04/Masaaki_Hatsumi.jpg'} className="img-responsive" />
+        // <img src={require('./img/Photos/masaaki-hatsumi.jpg')} className="img-responsive" />
         <div className='typeContainer2'>
           <h1>History of the Bujinkan?</h1>
-             <div onClick={() => this.onClick()}>
-              <div className="homeButton2"><h2>Learn More</h2></div>
-            </div>
+            { /* <div onClick={() => this.onClick(this, lm)}>
+              <div className="homeButton" id='lm'><h2>Learn More</h2></div>
+            </div> */}
 
             {
            this.state.childVisible
@@ -62,7 +62,7 @@ class About extends Component {
          }
         </div>
       </div>
-    // </div>
+     </div>
     )
   }
   onClick() {
