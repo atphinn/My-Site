@@ -54,6 +54,7 @@ header{
 .type {
 
     background-color: black;
+    color: white;
     padding: 15px 20px;
     text-align: center;
 
@@ -70,9 +71,9 @@ header{
 .typeContainer2{
   color: white;
   float: right;
-  margin: -518px 0px 0px 49px;
+  margin: -588px 0px 0px 49px;
   position: relative;
-  width: 456px;
+  width: 464px;
 }
 
 .img-responsive{
@@ -110,7 +111,7 @@ footer{
 
 #social{
   margin: -75px 0 0 100px;
-  padding-bottom: 11px;
+  padding-bottom: 27px;
 }
 }
  .btnSocial{

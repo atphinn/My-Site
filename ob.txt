@@ -1,0 +1,25 @@
+<div class="pg-right-rail-tall pg-wrapper ">
+        <div class="pg__background__image_wrapper"></div>
+        <article class="pg-rail-tall pg-rail--align-right " itemscope itemtype="https://schema.org/NewsArticle">
+            <meta itemprop="isPartOf" content="news">
+            <meta itemprop="articleSection" content="asia">
+            <meta itemprop="dateCreated" content="2018-04-23T05:27:02Z">
+            <meta itemprop="datePublished" content="2018-04-23T05:27:02Z">
+            <meta itemprop="dateModified" content="2018-04-23T11:22:37Z">
+            <meta itemprop="url" content="https://www.cnn.com/2018/04/23/asia/north-korea-south-korea-upcoming-summit-intl/index.html">
+            <meta itemprop="author" content="Joshua Berlinger and Yoonjung Seo, CNN">
+            <meta itemprop="headline" content="South Korea stops blasting propaganda along border with North as summit looms - CNN">
+            <meta itemprop="description" content="South Korea&#39;s military announced Monday it has turned off loudspeakers that blast propaganda across the highly militarized border with North Korea, in an apparent gesture of goodwill ahead of Friday&#39;s historic summit between the two nations&#39; leaders.">
+            <meta itemprop="keywords" content="asia, South Korea stops blasting propaganda along border with North as summit looms - CNN">
+            <meta itemprop="image" content="https://cdn.cnn.com/cnnnext/dam/assets/180423102157-02-dmz-loudspeaker-super-tease.jpg">
+            <meta itemprop="thumbnailUrl" content="https://cdn.cnn.com/cnnnext/dam/assets/180423102157-02-dmz-loudspeaker-super-tease.jpg">
+            <meta itemprop="alternativeHeadline" content="South Korea stops blasting propaganda as summit looms">
+            <div class="l-container">
+
+
+            /article/book[price>35]/price
+
+
+            page title:   HTML - /html/body/div[7]/article/div[1]/h1   XML - //article/title
+            publish date: /html/body/div[7]/article/div[1]/div[2]/div[1]/p[3]  xml - //article/datePublished
+            author name : /html/body/div[7]/article/div[1]/div[2]/div[1]/p[1]/span/a  xml - //article/author

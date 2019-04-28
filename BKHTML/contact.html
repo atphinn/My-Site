@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Muzosa Brooklyn Bujinkan Dojo</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <nav>
+    <!-- This is the logo placeholder image -->
+    <li id='logo'>
+      <a href="/index">
+        <img src="http://emblemsbf.com/img/3040.jpg" alt="Muzosa" class="img-responsive" style="height: 3em"></a>
+      </li>
+
+      <!-- The navigation links  -->
+    <ul id="headerButtons">
+      <li class="navButton">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navButton">
+        <a href="about.html">About</a>
+      </li>
+      <li class="navButton">
+        <a href="contact.html">Contact</a>
+      </li>
+      <li class="navButton">
+        <a href="https://www.muzosa.com" target="_blank">Muzosa Bujinkan Dojo</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Main content of the page the initial bannner -->
+  <body>
+    <div id="contactBody">
+      <div id="mapBanner">
+      </div>
+      <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mapBanner'), {
+          center: {lat: 40.666885, lng: -73.973823},
+          zoom: 17
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByVYdAAV-bsEE8Qugi0RrJCn2m_5kMpI4&callback=initMap"
+    async defer></script>
+      <!-- <div id="contactInfo">
+        <a href="https://www.muzosa.com/contact" target="_blank" >
+          <h1>Contact us to try a free class!</h1>
+        </a>
+        <p>LOCATION:Training takes place from 7:00 pm-9:00 pm on the porch and surrounding grounds of Litchfield Villa in Prospect Park</p>
+        <img src='img/Photos/647.jpg' />
+      </div> -->
+    </div>
+  </body>
+  <footer>
+    <ul id="footerButtons">
+      <li class="navButton">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="navButton">
+        <a href="/about">About</a>
+      </li>
+      <li class="navButton">
+        <a href="/contact">Contact</a>
+      </li>
+      <li class="navButton">
+        <a href="https://www.muzosa.com" target="_blank">Muzosa Bujinkan Dojo</a>
+      </li>
+  </ul>
+
+</footer>
+</html>

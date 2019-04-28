@@ -1,0 +1,78 @@
+<!-- curl -H "X-CMC_PRO_API_KEY: 9a0d001c-4b62-4a14-85da-b0a293daaf54" -H "Accept: application/json" -d "start=1&limit=5000&convert=USD" -G https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
+
+https://rest.coinapi.io/v1/latest?X-CoinAPI-Key:A49B4254-638E-46F8-A3FE-4B1D7D7CD586&limit=3&volume_traded
+
+https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=9a0d001c-4b62-4a14-85da-b0a293daaf54&start=1&limit=3&convert=USD&sort=max_supply
+https://rest.coinapi.io/v1/latest?X-CoinAPI-Key:A49B4254-638E-46F8-A3FE-4B1D7D7CD586&max_supply&start=1&limit=3
+https://rest.coinapi.io/v1/ohlcv/periods?X-CoinAPI-Key:A49B4254-638E-46F8-A3FE-4B1D7D7CD58 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="cryptocurrency">
+      <p class="first"></p>
+      <p class="second"></p>
+    </div>
+    <!-- <script type="text/javascript">
+      $.getJSON("https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=9a0d001c-4b62-4a14-85da-b0a293daaf54&start=1&limit=3&convert=USD&sort=max_supply", function(data){
+          console.log(data);
+        }
+
+      });
+
+    </script> -->
+
+  <script type="text/javascript">
+      // let loadPost = function(){
+      //   let xhr = new XMLHttpRequest();
+      //   xhr.onreadystatechange = function(){
+      //     if (this.readyState === 4 && this.status === 200){
+      //       let response = JSON.parse(this.responseText);
+      //       renderPost(response);
+      //     }
+      //   }
+      //   var req = new XMLHttpRequest();
+      //   req.open('GET', "https://rest.coinapi.io/v1/latest?apikey=A49B4254-638E-46F8-A3FE-4B1D7D7CD586&limit=3&volume_traded", true);
+      //   req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      //   req.send();
+      // }
+      // var req = new XMLHttpRequest();
+      // req.open('GET', "https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=9a0d001c-4b62-4a14-85da-b0a293daaf54&start=1&limit=3&convert=USD&sort=max_supply", true);
+      // req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      // req.send();
+      var req = new XMLHttpRequest();
+      req.open('GET', "https://min-api.cryptocompare.com/data/top/volumes?apikey=c5b241074bca6c5ca4dc7a40a7556483eabd21e02d6218c1ce3e190f4a6f7cd3tsym=BTC&limit=3", true);
+      req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+      req.send();
+    </script>
+
+    <!-- <script type="text/javascript">
+      var req = new XMLHttpRequest();
+
+
+      if ('withCredentials' in req) {
+          req.open('GET', 'https://cors-anywhere/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=9a0d001c-4b62-4a14-85da-b0a293daaf54&start=1&limit=3&convert=USD', true);
+
+          req.onreadystatechange = function() {
+              if (req.readyState === 4) {
+                  if (req.status >= 200 && req.status < 400) {
+
+                  } else {
+
+                  }
+              }
+          };
+          req.send();
+}
+    </script> -->
+  </body>
+</html>

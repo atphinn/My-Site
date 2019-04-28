@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Brooklyn extends React.Component {
   render() {
     return(
-      <div className='type'>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
+      <div className='type'>Brooklyn Muzosa Bujikan Dojo embraces the spirit of Budo - an armed and unarmed historical style of Martial Arts that pre dates modern practices such a Judo and Akido. Known as a living art, Bujinkan Budo Taijutsu is applicable within our modern culture.Training in the evenings in all weather, we believe the way of Budo, is to practice it in all situations and in all environments. <span>LOCATION:Training takes place from 7:00 pm-9:00 pm on the porch and surrounding grounds of Litchfield Villa in Prospect Park</span> </div>
     );
   }
 }
@@ -12,7 +12,11 @@ class Brooklyn extends React.Component {
 class Bujin extends React.Component {
   render() {
     return(
-      <div className='type'>Lorem ipsum dolor sit amet, ligula sapien curabitur sagittis, vel lectus tincidunt vel purus sit scelerisque, vulputate purus tellus, tristique varius, hymenaeos non ultricies facilisis scelerisque. Fusce lorem cras auctor pellentesque leo, luctus tortor ipsum ut sem, a sed felis orci lacinia, id at pellentesque, in ut dui. Nulla vitae vehicula in at vestibulum, nulla sed tortor hendrerit vel nam, nibh eros aliquam urna justo vel, et nunc vel duis est, sit wisi. Elit sem orci a pretium dignissim sed. Dui sapien metus sit, sodales pulvinar eu ac volutpat, lorem diam lobortis sed eget ornare curae.</div>
+      <div className='type'>The Bujinkan Dojo was organized in the early 1970's by Masaaki Hatsumi. This organization is comprised of nine distinct schools of ancient Japanese martial arts, with traceable histories from the 9th century and earlier. Hatsumi-sensei inherited these ryuha from his teacher, the late Toshitsugu Takamatsu, in 1972.The Bujinkan Budo Taijutsu system of martial arts emphasizes natural and relaxed body movement. This martial art is comprised of authentic techniques from ancient samurai and ninja combat arts, taught within both their historical contexts as well as within the modern millieu.
+
+      The subtle destruction of the attacker's balance and rhythm and proper control of distance and timing are a primary focus of Bujinkan Budo Taijutsu. These principles allow even smaller persons to overcome larger and more powerful opponents.
+         <a href="https://www.muzosa.com/articles" target="_blank" ><h3> <u>See more at out main site</u></h3></a>
+      </div>
     );
   }
 }
@@ -36,7 +40,7 @@ class About extends Component {
       <div className='typeContainer2'>
         <h1>What is BK Muzosa Bujinkan?</h1>
            <div onClick={() => this.onClick(this,mo)}>
-             <div className="homeButton" id='mo'><h2>Click here to learn more about Muzosa and the Bujinkan</h2></div>
+             <div className="homeButton" id='mo'><h2>Click here to learn more about Muzosa </h2></div>
            </div>
 
            {
@@ -51,9 +55,9 @@ class About extends Component {
         // <img src={require('./img/Photos/masaaki-hatsumi.jpg')} className="img-responsive" />
         <div className='typeContainer2'>
           <h1>History of the Bujinkan?</h1>
-            { /* <div onClick={() => this.onClick(this, lm)}>
-              <div className="homeButton" id='lm'><h2>Learn More</h2></div>
-            </div> */}
+            <div onClick={() => this.onClick(this,mo)}>
+              <div className="homeButton" id='mo'><h2>Click here to learn more about the Bujinkan</h2></div>
+            </div>
 
             {
            this.state.childVisible
