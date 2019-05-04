@@ -19,7 +19,7 @@ ul li a:hover{
   padding: 35px 30px;
 }
 
- h1,p{
+ h1,p,h3{
   color: white;
 }
 
@@ -33,7 +33,7 @@ nav{
 }
 
 #logo{
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 #headerButtons{
@@ -99,7 +99,7 @@ nav{
 
 #map{
   background-color: black;
-  height: 400px;
+  width: 100%;
 
 }
 /* Footer */
@@ -150,4 +150,56 @@ footer{
  /* Twitter */
  .fa-twitter {
      color: white;
+ }
+
+ /* Mobile */
+
+ @media only screen and (max-width: 768px){
+
+   body {
+     font-family: Texta-Book,Arial,sans-serif;
+     margin: 0 auto;
+     position: relative;
+     background-color: black;
+   }
+
+  nav{
+
+  }
+  #logo{
+    padding: 20px 20px;
+    margin: 0 auto;
+  }
+
+
+  h3{
+    text-align: center;
+  }
+
+  #headerButtons{
+    display: none;
+  }
+
+  footer{
+
+  }
+
+  #footerButtons{
+    display: block;
+    text-align: center;
+    padding: 0 0;
+  }
+
+
+/* About Page */
+
+#mainBody{
+
+}
+
+#typeContainer,#typeContainer2{
+  margin: 0 auto;
+  width: 300px;
+  font-size: medium;
+}
  }
