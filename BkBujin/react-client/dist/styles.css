@@ -1,8 +1,9 @@
-*{list-style-type: none;}
+*{list-style-type: none; }
 body {
   font-family: Texta-Book,Arial,sans-serif;
   margin: 0 auto;
   position: relative;
+  background-color: black;
 }
 
 a{
@@ -18,9 +19,13 @@ ul li a:hover{
   padding: 35px 30px;
 }
 
+ h1,p,h3{
+  color: white;
+}
+
 
 /*Header*/
-header{
+nav{
   background-color: black;
   color: white;
   display: flex;
@@ -28,12 +33,14 @@ header{
 }
 
 #logo{
-  padding: 20px 10px;
+  padding: 20px 20px;
+  float: inline-start;
 }
 
 #headerButtons{
   display: flex;
   margin: 0 auto;
+  padding-left: 250px;
 }
 
 .navButton{
@@ -48,32 +55,24 @@ header{
 /*About*/
 
 #mainBanner{
-  padding: 0 0 10px 0px;
+  padding: 0 0 0px 0px;
 }
 
-.type {
-
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-
-}
-
-/* .typeContainer{
-  float: none;
-  margin: -600px 0 200px 938px;
+#typeContainer{
+  margin: -571px 0 0px 115px;
+  width: 450px;
   text-align: center;
-  color: white;
-  width: 456px;
-} */
+}
 
-.typeContainer2{
-  color: white;
-  float: right;
-  margin: -588px 0px 0px 49px;
-  position: relative;
-  width: 464px;
+#typeContainer2{
+  margin: -455px 0 0 910px;
+  width: 450px;
+  text-align: center;
+  padding: 0 0 50px;
+}
+
+#seperate{
+    background-color: black;
 }
 
 .img-responsive{
@@ -91,29 +90,39 @@ header{
   background-color: black;
   text-align: center;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #img-contact{
   width: 100%;
 }
+
+#map{
+  background-color: black;
+  width: 100%;
+
+}
 /* Footer */
 
 footer{
   background-color: black;
-  margin: -19px 0 0 0;
+
 }
 
 #footerButtons{
   display: flex;
   justify-content: center;
+  margin: 0 auto;
 }
 
+/* Social interactions */
 
 #social{
   margin: -75px 0 0 100px;
   padding-bottom: 27px;
 }
-}
+
  .btnSocial{
    padding: 0px 30px;
  }
@@ -143,3 +152,64 @@ footer{
  .fa-twitter {
      color: white;
  }
+
+ /* Mobile */
+
+ @media only screen and (max-width: 768px){
+
+   body {
+     font-family: Texta-Book,Arial,sans-serif;
+     margin: 0 auto;
+     position: relative;
+     background-color: black;
+   }
+
+  nav{
+
+  }
+
+  ul li a:hover{
+    color: black;
+    background-color: white;
+    padding: 35px 30px;
+  }
+
+  #logo{
+    padding: 20px 20px;
+    margin: 0 auto;
+  }
+
+
+  h3{
+    text-align: center;
+  }
+
+  #headerButtons{
+    display: none;
+  }
+
+  footer{
+
+  }
+
+  #footerButtons{
+    display: block;
+    text-align: center;
+    padding: 0 0;
+  }
+
+
+/* About Page */
+
+#mainBody{
+
+}
+
+#typeContainer,#typeContainer2{
+  margin: 0 auto;
+  width: 300px;
+  font-size: medium;
+}
+ }
+
+ /* Contact */
