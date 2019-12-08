@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-        
+
         <Link 
         to="/page-2/"
           style={{
@@ -38,16 +38,18 @@ const Header = ({ siteTitle }) => (
         >
         About
         </Link>
-        <Link to="/contact/"
+       
+        <Link 
         to="/contact/"
-        style={{
-        color: `white`,
-        textDecoration: `none`,
-        padding: `0 20px 0 0`,
-        }}
+          style={{
+          color: `white`,
+          textDecoration: `none`,
+          padding: `0 20px 0 0`,
+          }}
         >
-          Contact
-          </Link>
+        Contact
+        </Link>
+       
       </h1>
     </div>
   </header>
