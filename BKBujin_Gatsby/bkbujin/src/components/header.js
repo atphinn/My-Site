@@ -6,21 +6,23 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `black`,
-      marginBottom: `1.45rem`,
+      marginBottom: `1.45`,
+      paddingBottom:`10px`
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-       
+
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0, }}>
         <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
+            padding: `0 20px 0 0`,
           }}
         >
           {siteTitle}
@@ -30,6 +32,7 @@ const Header = ({ siteTitle }) => (
           style={{
           color: `white`,
           textDecoration: `none`,
+          padding: `0 20px 0 0`,
           }}
         >
         About
@@ -39,6 +42,7 @@ const Header = ({ siteTitle }) => (
         style={{
         color: `white`,
         textDecoration: `none`,
+        padding: `0 20px 0 0`,
         }}
         >
           Contact
