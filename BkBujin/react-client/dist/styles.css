@@ -210,6 +210,11 @@ footer{
   width: 300px;
   font-size: medium;
 }
+
+#social{
+  margin: 0 0 0 100px;
+  padding-bottom: 27px;
+}
  }
 
  /* Contact */
