@@ -2,12 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {withScriptjs, withGoogleMap, GoogleMap,Marker} from "react-google-maps"
 
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Page two" />
-
+    <SEO title="Contact Page" />
+  
     <div id="contactBody">
         <div id="contactInfo">
         <a href="https://www.muzosa.com/contact" target="_blank" >
