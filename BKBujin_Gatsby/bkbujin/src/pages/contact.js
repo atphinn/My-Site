@@ -17,9 +17,10 @@ withGoogleMap
 )
 
 (props => (
-  <GoogleMap defaultZoom={17} defaultCenter={{ lat: 40.666885, lng: -73.973823}}>
+  <GoogleMap defaultZoom={17} defaultCenter={{ lat: 40.678919, lng: -73.982449}}>
     {props.isMarkerShown && (
-      <Marker position={{ lat: 40.666885, lng: -73.973823 }} />
+      <Marker position={{ lat: 40.678919, lng: -73.982449 }} />
+
     )}
   </GoogleMap>
 ));
